@@ -1,0 +1,59 @@
+/* --font-title: 'Instrument Serif', serif;
+  --font-logo: 'Mulish', sans-serif;
+  --font-text: 'Source Sans Pro', sans-serif; */
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-logo);
+  padding-left: 2rem;
+  padding-right: 2rem;
+  height: 5rem;
+}
+
+.menuWrap {
+  width: 100%;
+  display: flex;
+  height: inherit;
+  justify-content: flex-end;
+}
+
+.logo {
+  font-weight: 700;
+  letter-spacing: 3px;
+  min-width: 10rem;
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  gap: 3%;
+  align-items: center;
+  width: 90%;
+  justify-content: flex-end;
+}
+
+.logo,
+.nav,
+.icon {
+  cursor: pointer;
+  font-size: var(--fs-6);
+}
+
+.iconContainer {
+  min-width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.icon {
+  width: var(--fs-6);
+  height: var(--fs-6);
+  margin-bottom: 4px;
+}

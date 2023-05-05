@@ -1,5 +1,4 @@
 /* root */
-
 :root {
   /* color */
   --bgcolor-main: #ebebeb;
@@ -8,7 +7,7 @@
   --color-accent: #ff3409;
 
   /* font */
-  --font-title: 'Instrument Serif', serif;
+  --font-title: 'Inria Serif', serif;
   --font-logo: 'Mulish', sans-serif;
   --font-text: 'Source Sans Pro', sans-serif;
 
@@ -22,12 +21,18 @@
   --fs-7: 22px;
   --fs-large: 36px;
   --fs-xlarge: 46px;
-  --fs-xxlarge: 56px;
+  --fs-hero: 14vw;
   /* shadow */
 }
 
-/************************ CSS reset ***********************/
+.darkMode {
+  /* color */
+  --bgcolor-main: #020a13;
+  --bgcolor-sub: #1b1f24;
+  --color-text: #ececec;
+}
 
+/************************ CSS reset ***********************/
 /*
   1. Use a more-intuitive box-sizing model.
 */
@@ -50,6 +55,12 @@ body {
   height: 100%;
   width: 100%;
   background-color: var(--bgcolor-main);
+  /* padding-left: 1rem;
+  padding-right: 1rem; */
+  max-width: 1800px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 /*
     Typographic tweaks!
@@ -57,7 +68,7 @@ body {
     5. Improve text rendering
   */
 body {
-  line-height: 1.5;
+  /* line-height: 1.5; */
   -webkit-font-smoothing: antialiased;
 }
 /*

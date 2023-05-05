@@ -1,0 +1,48 @@
+.container {
+  height: 100vh;
+}
+
+.wrap {
+  margin-top: 4rem;
+}
+
+.heroWrap {
+  width: 100%;
+  height: calc(50vh - 96px);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.heroText {
+  font-size: var(--fs-hero);
+  font-weight: 400;
+  font-family: var(--font-title);
+  letter-spacing: -10px;
+  line-height: 80%;
+}
+
+.presentationWrap {
+  line-height: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -27vh;
+  height: calc(70vh - 96px);
+  align-items: end;
+  /* background-color: aqua; */
+}
+
+.paragraph {
+  font-size: var(--fs-3);
+  width: 40%;
+  align-self: last baseline;
+}
+
+.photo {
+  /* width: 35%; */
+  height: -moz-fit-content;
+  /* height: fit-content; */
+  z-index: -10;
+  height: 85%;
+  width: fit-content;
+}

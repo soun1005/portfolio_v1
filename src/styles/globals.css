@@ -21,7 +21,6 @@
   --fs-7: 22px;
   --fs-large: 36px;
   --fs-xlarge: 46px;
-  --fs-hero: 14vw;
   /* shadow */
 }
 
@@ -55,12 +54,11 @@ body {
   height: 100%;
   width: 100%;
   background-color: var(--bgcolor-main);
-  /* padding-left: 1rem;
-  padding-right: 1rem; */
-  max-width: 1800px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  object-fit: cover;
 }
 /*
     Typographic tweaks!

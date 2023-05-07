@@ -1,6 +1,10 @@
 .container {
   /* Full screen height */
   height: 100vh;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 /* wraps */

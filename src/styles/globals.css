@@ -54,10 +54,8 @@ body {
   height: 100%;
   width: 100%;
   background-color: var(--bgcolor-main);
-  max-width: 1600px;
-  margin: 0 auto;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  /* max-width: 1600px; */
+  /* margin: 0 auto; */
   object-fit: cover;
 }
 /*

@@ -2,3 +2,7 @@
   font-family: 'Instrument Serif', serif;
   font-size: 40px;
 } */
+
+.article {
+  background-color: var(--bgcolor-sub);
+}

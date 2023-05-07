@@ -16,7 +16,7 @@ export default function Home(): JSX.Element {
       <main className={styles.main}>
         <Main />
       </main>
-      <article>
+      <article className={styles.article}>
         <Skills />
       </article>
     </>

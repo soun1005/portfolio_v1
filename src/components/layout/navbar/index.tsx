@@ -1,6 +1,6 @@
 import styles from './Navbar.module.css';
 import Image from 'next/image';
-import icon from '../../../../public/sunlightIcon.png';
+import icon from '@/assets/nav/sunlightIcon.png';
 
 const Navbar = () => {
   return (

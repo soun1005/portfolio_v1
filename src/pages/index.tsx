@@ -3,6 +3,7 @@
 import Head from 'next/head';
 import styles from '@/styles/index.module.css';
 import Main from '@/components/page/main';
+import Skills from '@/components/page/skills';
 
 export default function Home(): JSX.Element {
   return (
@@ -15,6 +16,9 @@ export default function Home(): JSX.Element {
       <main className={styles.main}>
         <Main />
       </main>
+      <article>
+        <Skills />
+      </article>
     </>
   );
 }

@@ -1,8 +1,8 @@
 import Navbar from '@/components/layout/navbar';
 import styles from './main.module.css';
 import Image from 'next/image';
-import profilePic from '../../../../public/portfolio.jpeg';
-import arrowDown from '../../../../public/arrow_down.png';
+import profilePic from '@/assets/mainPage/portfolio.jpeg';
+import arrowDown from '@/assets/mainPage/arrow_down.png';
 
 const Main = () => {
   return (

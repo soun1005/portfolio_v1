@@ -14,7 +14,7 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 3%;
+  grid-column-gap: 6%;
   grid-row-gap: 0px;
   margin-bottom: 3rem;
   justify-items: center;
@@ -27,4 +27,16 @@
   font-size: var(--fs-large);
   font-weight: 500;
   font-style: italic;
+}
+
+@media (max-width: 1500px) {
+  .cardWrap {
+    grid-column-gap: 3%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .cardWrap {
+    grid-column-gap: 2%;
+  }
 }

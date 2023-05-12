@@ -12,8 +12,6 @@ import react from '@/assets/skillIcons/react.png';
 import sass from '@/assets/skillIcons/sass.png';
 import ts from '@/assets/skillIcons/ts.png';
 
-import ArrowIcon from '@/components/common/arrowUp';
-
 const Skills = () => {
   return (
     <div className={styles.container}>
@@ -31,7 +29,6 @@ const Skills = () => {
         <Card title="NEXT.JS" image={next} />
         <Card title="TYPESCRIPT" image={ts} />
       </div>
-      <ArrowIcon />
     </div>
   );
 };

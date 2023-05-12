@@ -1,17 +1,13 @@
 .arrowUp {
   width: 100%;
-  /* color: var(--color-accent); */
-  /* text-align: center; */
-  /* font-size: 3rem; */
-  /* background-color: red; */
   display: flex;
   justify-content: end;
-  position: absolute;
-  bottom: 25px;
-  right: 25px;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
 }
 
 .icon {
-  width: 3rem;
+  width: 35px;
   height: fit-content;
 }

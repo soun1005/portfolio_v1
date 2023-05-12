@@ -1,0 +1,40 @@
+.container {
+  height: 15rem;
+  padding: var(--container-padding);
+  max-width: var(--container-maxwidth);
+  margin: var(--container-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-weight: var(--logo-weight);
+  letter-spacing: var(--logo-spacing);
+}
+
+.title {
+  font-size: var(--fs-2);
+}
+
+.email {
+  margin-top: 10px;
+  font-size: var(--fs-4);
+}
+
+.linkWrap {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  /* text-decoration: underline; */
+  font-weight: 500;
+}
+
+.linkWrap li {
+  font-size: var(--fs-7);
+}

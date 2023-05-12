@@ -14,12 +14,18 @@
 
 .cardImage {
   width: fit-content;
-  height: 28%;
+  height: 24%;
 }
 
 .title {
   font-size: var(--fs-2);
   font-family: var(--font-text);
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   font-weight: 600;
+}
+
+@media (max-width: 1400px) {
+  .wrap {
+    height: 26vh;
+  }
 }

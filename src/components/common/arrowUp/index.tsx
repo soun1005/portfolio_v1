@@ -1,11 +1,11 @@
 import styles from './ArrowUp.module.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretUp } from '@fortawesome/free-solid-svg-icons';
+import Image, { StaticImageData } from 'next/image';
+import pageUp from '@/assets/pageUp.png';
 
 const ArrowUp = () => {
   return (
     <div className={styles.arrowUp}>
-      <FontAwesomeIcon icon={faCaretUp} />
+      <Image src={pageUp} alt="up" className={styles.icon} />
     </div>
   );
 };

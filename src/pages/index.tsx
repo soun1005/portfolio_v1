@@ -3,9 +3,11 @@
 import Head from 'next/head';
 import styles from '@/styles/index.module.css';
 import Main from '@/components/page/main';
-import Skills from '@/components/page/skills';
 import ArrowUp from '@/components/common/arrowUp';
 import Footer from '@/components/layout/footer';
+import Skills from '@/components/page/skills';
+import About from '@/components/page/about';
+import Projects from '@/components/page/projects';
 
 export default function Home(): JSX.Element {
   return (
@@ -17,10 +19,16 @@ export default function Home(): JSX.Element {
       </Head>
       <main className={styles.main}>
         <Main />
-      </main>
-      <article className={styles.article}>
-        <Skills />
         <ArrowUp />
+      </main>
+      <article className={styles.skillsWrap}>
+        <Skills />
+      </article>
+      <article className={styles.projectWrap}>
+        <Projects />
+      </article>
+      <article className={styles.aboutWrap}>
+        <About />
       </article>
       <Footer />
     </>

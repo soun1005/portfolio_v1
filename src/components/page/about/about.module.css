@@ -1,0 +1,42 @@
+.mainWrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55%;
+  /* background-color: red; */
+}
+
+.descWrap {
+  width: 50%;
+  /* background-color: aquamarine; */
+}
+
+.descWrap h2 {
+  font-size: var(--fs-xlarge);
+  font-family: var(--font-title);
+  font-weight: 400;
+  letter-spacing: -6px;
+}
+
+.title {
+  font-size: var(--fs-7);
+  font-family: var(--font-title);
+  font-weight: 400;
+  letter-spacing: -1px;
+}
+
+.desc {
+  margin-top: 1rem;
+  line-height: 1.5;
+}
+
+.photoWrap {
+  width: 20%;
+  height: 350px;
+}
+
+.photo {
+  object-fit: cover;
+  /* width: inherit; */
+  height: inherit;
+}

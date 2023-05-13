@@ -18,13 +18,13 @@
   --fs-4: 16px;
   --fs-5: 18px;
   --fs-6: 20px;
-  --fs-7: 22px;
+  --fs-7: 26px;
   --fs-large: 60px;
-  --fs-xlarge: 70px;
+  --fs-xlarge: 86px;
   /* shadow */
 
   --container-height: 100vh;
-  --container-padding: 0 3rem;
+  --container-padding: 0 4rem;
   --container-maxwidth: 1600px;
   --container-margin: 0 auto;
 
@@ -122,4 +122,20 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.container {
+  max-width: var(--container-maxwidth);
+  height: var(--container-height);
+  margin: var(--container-margin);
+  padding: var(--container-padding);
+}
+
+.title {
+  font-family: var(--font-title);
+  font-size: var(--fs-large);
+  font-weight: 500;
+  font-style: italic;
+  padding: 3rem 0;
+  text-decoration: underline;
 }

@@ -1,0 +1,19 @@
+.container {
+  /* padding: 3px 14px; */
+  background-color: var(--bgcolor-sub);
+  width: fit-content;
+  color: var(--color-text);
+  border-radius: 7px;
+  height: 20px;
+  vertical-align: center;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container span {
+  font-size: var(--fs-1);
+  text-align: center;
+  font-weight: 600;
+}

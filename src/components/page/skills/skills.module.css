@@ -20,14 +20,7 @@
   margin-bottom: 3rem;
   justify-items: center;
   height: 77%;
-  margin-top: 2rem;
-}
-
-.title {
-  font-family: var(--font-title);
-  font-size: var(--fs-large);
-  font-weight: 500;
-  font-style: italic;
+  /* margin-top: 2rem; */
 }
 
 @media (max-width: 1500px) {

@@ -13,12 +13,18 @@ type Card = {
 const ProjectCard = ({ screenshot, title, desc, tags }: Card) => {
   return (
     <div className={styles.container}>
-      <Image src={screenshot} alt={title} />
-      <h1>{title}</h1>
-      <span>{desc}</span>
-      {tags}
-      <Button text="DEMO LINK" />
-      <Button text="GITHUB" />
+      <Image src={screenshot} alt={title} className={styles.img} />
+      <div className={styles.descWrap}>
+        <div className={styles.titleWrap}>
+          <p>{title}</p>
+          <span>{desc}</span>
+          {tags}
+        </div>
+        <div className={styles.buttonWrap}>
+          <Button text="DEMO LINK" />
+          <Button text="GITHUB" />
+        </div>
+      </div>
     </div>
   );
 };

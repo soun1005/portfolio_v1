@@ -1,0 +1,44 @@
+.container {
+  background-color: white;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.descWrap {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 1rem; */
+}
+
+.titleWrap {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background-color: pink;
+  height: 100%;
+}
+
+.titleWrap p,
+.titleWrap span {
+  margin-bottom: 10px;
+  border: 2px dashed royalblue;
+}
+
+.buttonWrap {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.img {
+  height: 210px;
+  width: 100%;
+  background-color: red;
+}

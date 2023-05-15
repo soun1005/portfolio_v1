@@ -48,7 +48,9 @@ const Navbar = () => {
                 ABOUT
               </Link>
             </li>
-            <li>CONTACT</li>
+            <li>
+              <a href="mailto: thdms1005@gmail.com">CONTACT</a>
+            </li>
           </ul>
           <div className={styles.iconContainer}>
             <Image src={icon} className={styles.icon} alt="daytime button" />

@@ -10,10 +10,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
-.container span {
+.container a {
   font-size: var(--fs-4);
   text-align: center;
   font-weight: 600;
+  color: white;
+  cursor: pointer;
 }

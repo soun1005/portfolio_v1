@@ -18,7 +18,8 @@ type ProjectCardProps = {
 
 const ProjectCard = ({ data }: ProjectCardProps) => {
   const projectList = data.map((projects) => {
-    const { screenshot, title, description, tags, id } = projects;
+    const { screenshot, title, description, tags, id, demoLink, github } =
+      projects;
 
     const tagList = tags.map((tag) => {
       return <Tag text={tag} key={tag[0]} />;
@@ -40,8 +41,8 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
             <div className={styles.tagWrap}>{tagList}</div>
           </div>
           <div className={styles.buttonWrap}>
-            <Button text="DEMO LINK" />
-            <Button text="GITHUB" />
+            <Button text="DEMO LINK" link={demoLink} />
+            <Button text="GITHUB" link={github} />
           </div>
         </div>
       </div>

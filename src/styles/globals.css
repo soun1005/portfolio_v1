@@ -130,6 +130,12 @@ a {
   color: var(--color-text);
 }
 
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
 .container {
   max-width: var(--container-maxwidth);
   height: var(--container-height);

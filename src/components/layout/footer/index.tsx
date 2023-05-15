@@ -12,7 +12,9 @@ const Footer = () => {
         <li>LinkedIn</li>
         <li>Github</li>
         <li>View CV</li>
-        <li>Contact</li>
+        <li>
+          <a href="mailto: thdms1005@gmail.com">Contact</a>
+        </li>
       </ul>
     </div>
   );

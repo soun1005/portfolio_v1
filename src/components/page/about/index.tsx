@@ -31,7 +31,10 @@ const About = () => {
           <Image src={profile} alt="profile" className={styles.photo} />
         </div>
       </div>
-      <Button text="VIEW CV" />
+      <Button
+        text="VIEW CV"
+        link="https://drive.google.com/file/d/17KuDVWw222NdkA_kTffH_4Px96Totl3M/view?usp=share_link"
+      />
     </div>
   );
 };

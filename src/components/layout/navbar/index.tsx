@@ -49,6 +49,18 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
+              <Link
+                activeClass="active"
+                to="footer"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={300}
+              >
+                LINKS
+              </Link>
+            </li>
+            <li>
               <a href="mailto: thdms1005@gmail.com">CONTACT</a>
             </li>
           </ul>

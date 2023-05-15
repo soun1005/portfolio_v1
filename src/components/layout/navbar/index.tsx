@@ -1,6 +1,9 @@
 import styles from './Navbar.module.css';
 import Image from 'next/image';
 import icon from '@/assets/nav/sunlightIcon.png';
+// import Link from 'next/link';
+import { Link } from 'react-scroll/modules';
+import Skills from '@/components/page/skills';
 
 const Navbar = () => {
   return (
@@ -9,9 +12,42 @@ const Navbar = () => {
         <div className={styles.logo}>SOEUN LEE</div>
         <div className={styles.menuWrap}>
           <ul className={styles.nav}>
-            <li>SKILLS</li>
-            <li>PROJECTS</li>
-            <li>ABOUT</li>
+            <li>
+              <Link
+                activeClass="active"
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={300}
+              >
+                SKILLS
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={300}
+              >
+                PROJECTS
+              </Link>
+            </li>
+            <li>
+              <Link
+                activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={300}
+              >
+                ABOUT
+              </Link>
+            </li>
             <li>CONTACT</li>
           </ul>
           <div className={styles.iconContainer}>

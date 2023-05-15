@@ -5,7 +5,7 @@ import profile from '@/assets/me.jpeg';
 
 const About = () => {
   return (
-    <div className={`container ${styles.container}`}>
+    <div className={`container ${styles.container}`} id="about">
       <h1 className="title">About</h1>
       <div className={styles.mainWrap}>
         <div className={styles.descWrap}>

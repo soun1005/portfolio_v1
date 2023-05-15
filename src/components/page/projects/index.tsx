@@ -4,7 +4,7 @@ import data from '@/data/projects.json';
 
 const Projects = () => {
   return (
-    <div className={`container ${styles.container}`}>
+    <div className={`container ${styles.container}`} id="projects">
       <h1 className="title">Projects</h1>
       <div className={styles.cardContainer}>
         <ProjectCard data={data} />

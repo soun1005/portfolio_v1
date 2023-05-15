@@ -14,7 +14,7 @@ import ts from '@/assets/skillIcons/ts.png';
 
 const Skills = () => {
   return (
-    <div className={`container ${styles.container}`}>
+    <div className={`container ${styles.container}`} id="skills">
       <h1 className="title">Skills</h1>
       <div className={styles.cardWrap}>
         <Card title="JAVASCRIPT" image={js} />

@@ -125,6 +125,11 @@ li {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
 .container {
   max-width: var(--container-maxwidth);
   height: var(--container-height);

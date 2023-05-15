@@ -1,10 +1,20 @@
-.container {
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cardWrap {
   background-color: white;
-  height: 340px;
+  width: 30%;
+  height: 440px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+  border-radius: 5px;
+  box-shadow: var(--shadow-card);
 }
 
 .descWrap {
@@ -14,20 +24,13 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  /* padding: 1rem; */
 }
 
 .titleWrap {
   width: 100%;
   padding: 1rem 1.5rem;
-  background-color: pink;
   height: 100%;
-}
-
-.titleWrap p,
-.titleWrap span {
-  margin-bottom: 10px;
-  border: 2px dashed royalblue;
+  margin-top: 1rem;
 }
 
 .buttonWrap {
@@ -38,7 +41,25 @@
 }
 
 .img {
-  height: 210px;
+  height: 190px;
   width: 100%;
-  background-color: red;
+  /* background-color: red; */
+  object-fit: cover;
+  border-radius: 5px 5px 0 0;
+}
+
+.titleWrap p {
+  font-weight: 700;
+  font-size: var(--fs-6);
+}
+
+.desc {
+  font-weight: 500;
+  margin-top: 10px;
+  letter-spacing: 1px;
+}
+
+.tagWrap {
+  display: flex;
+  gap: 10px;
 }

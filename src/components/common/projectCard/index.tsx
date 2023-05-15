@@ -1,32 +1,54 @@
 import styles from './projectCard.module.css';
 import Button from '@/components/common/button';
-import Image, { StaticImageData } from 'next/image';
-import { ReactElement } from 'react';
+import Image from 'next/image';
+import Tag from '../projectTag';
 
-type Card = {
-  screenshot: StaticImageData;
+type Project = {
+  id: number;
   title: string;
-  desc: string;
-  tags: ReactElement[];
+  description: string;
+  tags: string[];
+  demoLink: string;
+  github: string;
+  screenshot: string;
+};
+type ProjectCardProps = {
+  data: Project[];
 };
 
-const ProjectCard = ({ screenshot, title, desc, tags }: Card) => {
-  return (
-    <div className={styles.container}>
-      <Image src={screenshot} alt={title} className={styles.img} />
-      <div className={styles.descWrap}>
-        <div className={styles.titleWrap}>
-          <p>{title}</p>
-          <span>{desc}</span>
-          {tags}
-        </div>
-        <div className={styles.buttonWrap}>
-          <Button text="DEMO LINK" />
-          <Button text="GITHUB" />
+const ProjectCard = ({ data }: ProjectCardProps) => {
+  const projectList = data.map((projects) => {
+    const { screenshot, title, description, tags, id } = projects;
+
+    const tagList = tags.map((tag) => {
+      return <Tag text={tag} key={tag[0]} />;
+    });
+
+    return (
+      <div className={styles.cardWrap} key={id}>
+        <Image
+          src={screenshot}
+          alt={title}
+          className={styles.img}
+          width={1000}
+          height={1000}
+        />
+        <div className={styles.descWrap}>
+          <div className={styles.titleWrap}>
+            <p>{title}</p>
+            <span className={styles.desc}>{description}</span>
+            <div className={styles.tagWrap}>{tagList}</div>
+          </div>
+          <div className={styles.buttonWrap}>
+            <Button text="DEMO LINK" />
+            <Button text="GITHUB" />
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  });
+
+  return <div className={styles.cardContainer}>{projectList}</div>;
 };
 
 export default ProjectCard;

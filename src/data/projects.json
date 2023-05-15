@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Openclassrooms project #2 - Bookie",
+    "description": "Fully responsive website to book accomodations.",
+    "tags": ["HTML", "CSS"],
+    "demoLink": "https://bookiesoeunlee.netlify.app/",
+    "github": "https://github.com/soun1005/op-p2_Booki",
+    "screenshot": "/screenshots/bookie.png"
+  },
+  {
+    "id": 2,
+    "title": "Openclassrooms project #3 - Ohmyfood",
+    "description": "An application to order food from gourmet restaurants.",
+    "tags": ["HTML", "SASS"],
+    "demoLink": "https://soun1005.github.io/op-p3_Ohmyfood/",
+    "github": "https://github.com/soun1005/op-p3_Ohmyfood",
+    "screenshot": "/screenshots/ohmyfood.png"
+  },
+  {
+    "id": 3,
+    "title": "Openclassrooms project #4 - GameOn",
+    "description": "A landing page for a game conferences and contests company.",
+    "tags": ["HTML", "CSS", "JavaScript"],
+    "demoLink": "https://soun1005.github.io/op-p4_GameOn/",
+    "github": "https://github.com/soun1005/op-p4_GameOn",
+    "screenshot": "/screenshots/gameon.png"
+  },
+  {
+    "id": 4,
+    "title": "Openclassrooms project #6 - Fisheye",
+    "description": "An accessible website for independent photographers to showcase. ",
+    "tags": ["HTML", "SASS", "JavaScript"],
+    "demoLink": "https://soun1005.github.io/op-p6_Fisheye/",
+    "github": "https://github.com/soun1005/op-p6_Fisheye",
+    "screenshot": "/screenshots/fisheye.png"
+  },
+  {
+    "id": 5,
+    "title": "Openclassrooms project #7 - Les petit plats",
+    "description": "Single page website to search recipes.",
+    "tags": ["HTML", "SASS", "JavaScript"],
+    "demoLink": "https://soun1005.github.io/op-p7_Lespetitsplats/",
+    "github": "https://github.com/soun1005/op-p7_Lespetitsplats",
+    "screenshot": "/screenshots/lespetitplats.png"
+  },
+  {
+    "id": 6,
+    "title": "Openclassrooms project #9 - Billed",
+    "description": "A project to practice to debug and test with Jest",
+    "tags": ["JavaScript", "Jest"],
+    "demoLink": "",
+    "github": "https://github.com/soun1005/op-p9_Billed",
+    "screenshot": "/screenshots/billed.png"
+  },
+  {
+    "id": 7,
+    "title": "Openclassrooms project #11 - Kasa",
+    "description": "A website to showcase accomodations.",
+    "tags": ["React", "React-router"],
+    "demoLink": "https://kasasoeunlee.netlify.app/",
+    "github": "https://github.com/soun1005/op-p11_Kasa",
+    "screenshot": "/screenshots/kasa.png"
+  },
+  {
+    "id": 8,
+    "title": "Openclassrooms project #12 - Sportsee",
+    "description": "A user profile page of sports coaching application.",
+    "tags": ["React", "React-router", "Recharts", "API"],
+    "demoLink": "https://sportseesoeunlee.netlify.app/",
+    "github": "https://github.com/soun1005/op-p12_SportSee",
+    "screenshot": "/screenshots/sportsee.png"
+  }
+]

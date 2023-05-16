@@ -63,3 +63,18 @@
   display: flex;
   gap: 10px;
 }
+
+@media (max-width: 479px) {
+  .cardContainer {
+    flex-direction: column;
+    width: 100%;
+    /* background-color: red; */
+  }
+  .cardWrap {
+    width: 100%;
+  }
+
+  .descWrap {
+    height: fit-content;
+  }
+}

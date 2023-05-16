@@ -23,14 +23,28 @@
   /* margin-top: 2rem; */
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 479px) {
+  .container {
+    height: fit-content;
+    padding-top: 0;
+  }
   .cardWrap {
-    grid-column-gap: 3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
 @media (max-width: 1300px) {
   .cardWrap {
     grid-column-gap: 2%;
+  }
+}
+
+@media (max-width: 1500px) {
+  .cardWrap {
+    grid-column-gap: 3%;
   }
 }

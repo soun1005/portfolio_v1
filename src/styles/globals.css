@@ -19,16 +19,20 @@
   --fs-5: 18px;
   --fs-6: 20px;
   --fs-7: 26px;
+  --fs-8: 30px;
   --fs-large: 60px;
   --fs-xlarge: 86px;
+
   /* shadow */
   --shadow-card: 0px 4px 4px 0px #00000040;
 
+  /* container size */
   --container-height: 100vh;
   --container-padding: 0 4rem;
   --container-maxwidth: 1600px;
   --container-margin: 0 auto;
 
+  /* logo */
   --logo-weight: 700;
   --logo-spacing: 3px;
 }
@@ -63,8 +67,6 @@ body {
   height: 100%;
   width: 100%;
   background-color: var(--bgcolor-main);
-  /* max-width: 1600px; */
-  /* margin: 0 auto; */
   object-fit: cover;
 }
 /*
@@ -150,4 +152,20 @@ button {
   font-style: italic;
   padding: 3rem 0;
   text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 600px;
+    padding: 0 2rem;
+  }
+  .title {
+    font-family: var(--font-title);
+    font-size: var(--fs-8);
+    font-weight: 400;
+    padding: 3rem 0;
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+  }
 }

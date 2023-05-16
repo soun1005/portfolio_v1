@@ -27,5 +27,14 @@
 @media (max-width: 1400px) {
   .wrap {
     height: 26vh;
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .wrap {
+    height: 100px;
+    width: 30%;
+    margin-bottom: 1rem;
   }
 }

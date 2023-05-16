@@ -2,10 +2,9 @@
   height: fit-content;
 }
 
-/* .cardContainer {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 40px;
-  grid-row-gap: 27px;
-} */
+@media (max-width: 479px) {
+  .container {
+    height: fit-content;
+    /* background-color: aqua; */
+  }
+}

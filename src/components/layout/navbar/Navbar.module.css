@@ -1,15 +1,9 @@
-/* --font-title: 'Instrument Serif', serif;
-  --font-logo: 'Mulish', sans-serif;
-  --font-text: 'Source Sans Pro', sans-serif; */
-
 .container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: var(--font-logo);
-  /* padding-left: 2rem;
-  padding-right: 2rem; */
   height: 6rem;
 }
 
@@ -56,4 +50,56 @@
   width: var(--fs-6);
   height: var(--fs-6);
   margin-bottom: 4px;
+}
+
+.responsiveNav {
+  display: none;
+}
+
+@media (max-width: 479px) {
+  .container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* nav bar height */
+    height: 6rem;
+  }
+  .menuWrap {
+    display: none;
+  }
+  .responsiveNav {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: rgba(217, 217, 217, 0.9);
+    width: 40%;
+    height: 100%;
+    /* opacity: 0.9; */
+    z-index: 1000;
+  }
+
+  .responsiveNav ul {
+    height: 100%;
+    text-align: end;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding-right: 1rem;
+  }
+
+  .buttonWrap {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .logo {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
 }

@@ -40,3 +40,48 @@
   /* width: inherit; */
   height: inherit;
 }
+
+@media (max-width: 479px) {
+  .container {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 0 2rem; */
+    padding-bottom: 2rem;
+  }
+  .mainWrap {
+    flex-direction: column-reverse;
+  }
+  .descWrap h2 {
+    font-size: var(--fs-7);
+  }
+  .photoWrap {
+    width: 30%;
+    height: 200px;
+  }
+  .descWrap {
+    width: 90%;
+    margin-top: 2rem;
+  }
+  .descWrap h2 {
+    font-size: 42px;
+    font-family: var(--font-title);
+    font-weight: 400;
+    letter-spacing: -1px;
+  }
+
+  .title {
+    font-size: var(--fs-5);
+    font-family: var(--font-title);
+    font-weight: 400;
+    letter-spacing: -1px;
+  }
+
+  .desc {
+    font-size: var(--fs-2);
+    margin-top: 1.2rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+}

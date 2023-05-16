@@ -56,7 +56,6 @@
 }
 
 /* texts */
-
 .heroText {
   font-size: 18vh;
   font-weight: 400;
@@ -123,6 +122,57 @@
   -webkit-animation: bounceTop 1.7s ease-in-out infinite;
   animation: bounceTop 1.7s ease-in-out infinite;
 }
+
+/* responsive design */
+
+@media (max-width: 479px) {
+  .container {
+    height: fit-content;
+    border: 3px solid salmon;
+  }
+  .wrap {
+    height: 600px;
+  }
+  .heroWrap {
+    height: 80%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heroText {
+    font-size: 4rem;
+  }
+  .nameWrap {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .presentationWrap {
+    height: fit-content;
+  }
+  .name {
+    font-size: 2rem;
+    line-height: 93%;
+    font-weight: 400;
+  }
+  .paragraph,
+  .bottomWrap {
+    display: none;
+  }
+  .photo {
+    position: relative;
+    width: 80%;
+  }
+  .scrollWrap {
+    width: 100%;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .arrow {
+    width: 1rem;
+  }
+}
+
+/* animation */
 
 @keyframes bounceTop {
   0%,

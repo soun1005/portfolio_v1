@@ -2,19 +2,26 @@ import styles from './Navbar.module.css';
 import Image from 'next/image';
 import icon from '@/assets/nav/sunlightIcon.png';
 import { Link } from 'react-scroll/modules';
+import { useState } from 'react';
 
 const Navbar = () => {
+  const [nav, openNav] = useState(false);
+
   return (
     <>
       <nav className={styles.container}>
         <div className={styles.logo}>SOEUN LEE</div>
         {/* responsive nav */}
-        <div className={styles.responsiveNav}>
-          <div className={styles.buttonWrap}>
-            <div className={styles.openIcon}>open</div>
-            <div className={styles.closeIcon}>X</div>
-          </div>
-          <ul>
+        <div
+          className={styles.openIcon}
+          onClick={() => {
+            openNav(!nav);
+          }}
+        >
+          <div className={nav ? styles.sideNav : styles.open}></div>
+        </div>
+        <div className={nav ? styles.responsiveNav : styles.desktopNav}>
+          <ul className={styles.nav}>
             <li>
               <Link
                 activeClass="active"
@@ -66,10 +73,13 @@ const Navbar = () => {
             <li>
               <a href="mailto: thdms1005@gmail.com">CONTACT</a>
             </li>
+            <li className={styles.iconContainer}>
+              <Image src={icon} className={styles.icon} alt="daytime button" />
+            </li>
           </ul>
         </div>
         {/* nav desktop mode */}
-        <div className={styles.menuWrap}>
+        {/* <div className={styles.menuWrap}>
           <ul className={styles.nav}>
             <li>
               <Link
@@ -126,7 +136,7 @@ const Navbar = () => {
           <div className={styles.iconContainer}>
             <Image src={icon} className={styles.icon} alt="daytime button" />
           </div>
-        </div>
+        </div> */}
       </nav>
     </>
   );

@@ -22,7 +22,7 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
       projects;
 
     const tagList = tags.map((tag) => {
-      return <Tag text={tag} key={tag[0]} />;
+      return <Tag text={tag} key={tag} />;
     });
 
     return (

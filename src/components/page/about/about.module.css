@@ -65,10 +65,11 @@
     margin-top: 2rem;
   }
   .descWrap h2 {
-    font-size: 42px;
+    /* font-size: 42px; */
     font-family: var(--font-title);
     font-weight: 400;
     letter-spacing: -1px;
+    font-size: 10vw;
   }
 
   .title {

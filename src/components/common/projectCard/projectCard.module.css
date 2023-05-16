@@ -77,4 +77,8 @@
   .descWrap {
     height: fit-content;
   }
+  .tagWrap {
+    flex-wrap: wrap;
+    gap: 0;
+  }
 }

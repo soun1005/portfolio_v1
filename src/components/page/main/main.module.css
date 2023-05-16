@@ -128,13 +128,12 @@
 @media (max-width: 479px) {
   .container {
     height: fit-content;
-    border: 3px solid salmon;
   }
   .wrap {
     height: 600px;
   }
   .heroWrap {
-    height: 80%;
+    height: 78%;
     flex-direction: column;
     align-items: center;
   }
@@ -160,12 +159,12 @@
   }
   .photo {
     position: relative;
-    width: 80%;
+    width: 65%;
   }
   .scrollWrap {
     width: 100%;
     align-items: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
   }
   .arrow {
     width: 1rem;

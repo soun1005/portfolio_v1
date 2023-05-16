@@ -18,3 +18,9 @@
   text-align: center;
   font-weight: 600;
 }
+
+@media (max-width: 479px) {
+  .container {
+    margin-right: 10px;
+  }
+}

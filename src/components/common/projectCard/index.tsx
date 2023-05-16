@@ -41,7 +41,7 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
             <div className={styles.tagWrap}>{tagList}</div>
           </div>
           <div className={styles.buttonWrap}>
-            <Button text="DEMO LINK" link={demoLink} />
+            {demoLink ? <Button text="DEMO LINK" link={demoLink} /> : null}
             <Button text="GITHUB" link={github} />
           </div>
         </div>

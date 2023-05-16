@@ -21,6 +21,7 @@ const Main = () => {
             src={profilePic}
             alt="profile photo"
             className={styles.photo}
+            priority={true}
           />
         </div>
         <div className={styles.presentationWrap}>

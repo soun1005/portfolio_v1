@@ -49,6 +49,7 @@
     "title": "Openclassrooms project #9 - Billed",
     "description": "A project to practice to debug and test with Jest",
     "tags": ["JavaScript", "Jest"],
+    "demoLink": null,
     "github": "https://github.com/soun1005/op-p9_Billed",
     "screenshot": "/screenshots/billed.png"
   },

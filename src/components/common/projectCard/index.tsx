@@ -8,7 +8,7 @@ type Project = {
   title: string;
   description: string;
   tags: string[];
-  demoLink: string | undefined;
+  demoLink: string | null;
   github: string;
   screenshot: string;
 };

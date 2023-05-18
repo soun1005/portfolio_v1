@@ -37,13 +37,6 @@
   --logo-spacing: 3px;
 }
 
-.darkMode {
-  /* color */
-  --bgcolor-main: #020a13;
-  --bgcolor-sub: #1b1f24;
-  --color-text: #ececec;
-}
-
 /************************ CSS reset ***********************/
 /*
   1. Use a more-intuitive box-sizing model.
@@ -145,6 +138,11 @@ button {
   padding: var(--container-padding);
 }
 
+.skillsWrap,
+.aboutWrap {
+  background-color: var(--bgcolor-sub);
+}
+
 .title {
   font-family: var(--font-title);
   font-size: var(--fs-large);
@@ -152,6 +150,15 @@ button {
   font-style: italic;
   padding: 3rem 0;
   text-decoration: underline;
+}
+
+#dark main,
+#dark article,
+#dark body {
+  /* color */
+  --bgcolor-main: #020a13;
+  --bgcolor-sub: #1b1f24;
+  --color-text: #ececec;
 }
 
 @media (max-width: 600px) {

@@ -1,5 +1,11 @@
 .container {
   height: fit-content;
+  background-color: var(--bgcolor-main);
+  /* color: var(--color-text); */
+}
+
+.title {
+  color: var(--color-text);
 }
 
 @media (max-width: 479px) {

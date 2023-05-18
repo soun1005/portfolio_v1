@@ -9,6 +9,7 @@
   max-width: 1600px;
   margin: 0 auto;
   position: relative;
+  color: var(--color-text);
 }
 
 .cardWrap {

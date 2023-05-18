@@ -1,8 +1,8 @@
 .container {
   /* padding: 3px 14px; */
-  background-color: var(--color-text);
+  background-color: #3c4041;
   width: fit-content;
-  color: white;
+  /* color: var(--color-text); */
   border-radius: 9px;
   height: 40px;
   vertical-align: center;

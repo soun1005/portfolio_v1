@@ -3,9 +3,15 @@ import Image from 'next/image';
 import icon from '@/assets/nav/sunlightIcon.png';
 import { Link } from 'react-scroll/modules';
 import { useState } from 'react';
+import { useAppContext } from '@/pages/context/AppContext';
 
 const Navbar = () => {
   const [nav, openNav] = useState(false);
+  const { isLightMode, toggleMode } = useAppContext();
+
+  const handleToggle = () => {
+    toggleMode();
+  };
 
   return (
     <>
@@ -73,7 +79,7 @@ const Navbar = () => {
             <li>
               <a href="mailto: thdms1005@gmail.com">CONTACT</a>
             </li>
-            <li className={styles.iconContainer}>
+            <li className={styles.iconContainer} onClick={handleToggle}>
               <Image src={icon} className={styles.icon} alt="daytime button" />
             </li>
           </ul>

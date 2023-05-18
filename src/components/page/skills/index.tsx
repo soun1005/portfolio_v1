@@ -11,6 +11,7 @@ import next from '@/assets/skillIcons/next.png';
 import react from '@/assets/skillIcons/react.png';
 import sass from '@/assets/skillIcons/sass.png';
 import ts from '@/assets/skillIcons/ts.png';
+import boot from '@/assets/skillIcons/boot.png';
 
 const Skills = () => {
   return (
@@ -22,6 +23,7 @@ const Skills = () => {
         <Card title="HTML" image={html} />
         <Card title="CSS" image={css} />
         <Card title="SCSS" image={sass} />
+        <Card title="BOOTSTRAP" image={boot} />
         <Card title="GIT" image={git} />
         <Card title="GITHUB" image={github} />
         <Card title="JEST" image={jest} />

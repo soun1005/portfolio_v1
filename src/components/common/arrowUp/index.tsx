@@ -1,6 +1,8 @@
 import styles from './ArrowUp.module.css';
-import Image, { StaticImageData } from 'next/image';
+import Image from 'next/image';
 import pageUp from '@/assets/pageUp.png';
+import pageUpW from '@/assets/pageUpWhite.png';
+import { useAppContext } from '@/pages/context/AppContext';
 
 const isBrowser = () => typeof window !== 'undefined';
 
@@ -10,14 +12,25 @@ function scrollToTop() {
 }
 
 const ArrowUp = () => {
+  const { isLightMode } = useAppContext();
+
   return (
     <div className={styles.arrowUp}>
-      <Image
-        src={pageUp}
-        alt="up"
-        className={styles.icon}
-        onClick={scrollToTop}
-      />
+      {isLightMode ? (
+        <Image
+          src={pageUp}
+          alt="up"
+          className={styles.icon}
+          onClick={scrollToTop}
+        />
+      ) : (
+        <Image
+          src={pageUpW}
+          alt="up"
+          className={styles.icon}
+          onClick={scrollToTop}
+        />
+      )}
     </div>
   );
 };

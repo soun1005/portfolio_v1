@@ -2,7 +2,7 @@ import styles from './footer.module.css';
 
 const Footer = () => {
   return (
-    <div className={styles.container} id="footer">
+    <div className={`container ${styles.container}`} id="footer">
       <div className={styles.logoWrap}>
         <h1 className={styles.logo}>SOEUN LEE.</h1>
         <span className={styles.title}>Frontend developer.</span>

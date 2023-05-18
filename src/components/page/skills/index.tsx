@@ -8,12 +8,16 @@ import github from '@/assets/skillIcons/github.png';
 import html from '@/assets/skillIcons/html.png';
 import jest from '@/assets/skillIcons/jest.png';
 import next from '@/assets/skillIcons/next.png';
+import nextW from '@/assets/skillIcons/nextW.png';
 import react from '@/assets/skillIcons/react.png';
 import sass from '@/assets/skillIcons/sass.png';
 import ts from '@/assets/skillIcons/ts.png';
 import boot from '@/assets/skillIcons/boot.png';
+import { useAppContext } from '@/pages/context/AppContext';
 
 const Skills = () => {
+  const { isLightMode } = useAppContext();
+
   return (
     <div className={`container ${styles.container}`} id="skills">
       <h1 className="title">Skills</h1>
@@ -28,7 +32,12 @@ const Skills = () => {
         <Card title="GITHUB" image={github} />
         <Card title="JEST" image={jest} />
         <Card title="FIGMA" image={figma} />
-        <Card title="NEXT.JS" image={next} />
+        {isLightMode ? (
+          <Card title="NEXT.JS" image={next} />
+        ) : (
+          <Card title="NEXT.JS" image={nextW} />
+        )}
+
         <Card title="TYPESCRIPT" image={ts} />
       </div>
     </div>

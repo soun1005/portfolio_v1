@@ -49,7 +49,7 @@
 .icon {
   width: var(--fs-6);
   height: var(--fs-6);
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 .responsiveNav,

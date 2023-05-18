@@ -6,6 +6,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: var(--bgcolor-main);
+  color: var(--color-text);
 }
 
 .logoWrap {

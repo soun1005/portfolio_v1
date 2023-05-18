@@ -33,7 +33,9 @@ export default function Home(): JSX.Element {
         <article className="aboutWrap">
           <About />
         </article>
-        <Footer />
+        <footer className="footer">
+          <Footer />
+        </footer>
       </div>
     </>
   );

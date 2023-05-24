@@ -62,6 +62,16 @@
 .tagWrap {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 820px) {
+  .cardWrap {
+    width: 48%;
+  }
+  .tagWrap {
+    margin-top: 1rem;
+  }
 }
 
 @media (max-width: 479px) {
@@ -78,7 +88,6 @@
     height: fit-content;
   }
   .tagWrap {
-    flex-wrap: wrap;
     gap: 0;
   }
 }

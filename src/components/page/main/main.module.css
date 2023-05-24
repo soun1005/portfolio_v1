@@ -1,8 +1,7 @@
 .container {
   /* Full screen height */
   height: 100vh;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: var(--container-padding);
   max-width: 1600px;
   margin: 0 auto;
   background-color: var(--bgcolor-main);
@@ -71,7 +70,6 @@
 
 .heroText:hover {
   font-style: italic;
-  transition: 30ms;
 }
 
 .photo {
@@ -126,12 +124,40 @@
 
 /* responsive design */
 
-@media (max-width: 479px) {
+/* tablet */
+@media (max-width: 820px) {
   .container {
     height: fit-content;
+    padding-bottom: 2rem;
+  }
+  .heroText {
+    font-size: 4rem;
+    letter-spacing: -5px;
+  }
+  .name {
+    font-size: 4rem;
+    line-height: 99%;
+  }
+  .wrap {
+    height: 400px;
+    margin-bottom: 0;
+  }
+  .paragraph,
+  .bottomWrap {
+    font-size: 14px;
+  }
+  .arrow {
+    width: 1rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .container {
+    height: 50rem;
   }
   .wrap {
     height: 600px;
+    margin-bottom: 0;
   }
   .heroWrap {
     height: 78%;

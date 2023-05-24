@@ -41,6 +41,25 @@
   font-size: var(--fs-7);
 }
 
+@media (max-width: 820px) {
+  .container {
+    height: fit-content;
+    flex-direction: column;
+    padding: 9rem 0;
+  }
+  .logoWrap {
+    align-items: center;
+  }
+  .linkWrap {
+    font-weight: 400;
+    margin-top: 4rem;
+    gap: 45px;
+    align-items: center;
+    text-decoration: underline;
+    flex-direction: column;
+  }
+}
+
 @media (max-width: 479px) {
   .container {
     height: fit-content;

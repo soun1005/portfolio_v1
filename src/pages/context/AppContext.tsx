@@ -13,7 +13,7 @@ const AppContext = createContext<AppContextProps>({} as AppContextProps);
 
 export const useAppContext = () => useContext(AppContext);
 
-export const AppContextProvider: React.FC<Props> = ({ children }) => {
+const AppContextProvider: React.FC<Props> = ({ children }) => {
   const [isLightMode, setIsLightMode] = useState(true);
 
   const toggleMode = () => {
@@ -26,3 +26,5 @@ export const AppContextProvider: React.FC<Props> = ({ children }) => {
     </AppContext.Provider>
   );
 };
+
+export default AppContextProvider;

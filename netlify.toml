@@ -5,8 +5,9 @@ command = "npm run build"
 
 [[redirects]]
   from = "/*"
-  to = "/index.html"
+  to = "/out/index.html"
   status = 200
+  force = true
   
 [[plugins]]
   package = "@netlify/plugin-nextjs"

@@ -3,10 +3,5 @@ environment = { NETLIFY_NEXT_PLUGIN_SKIP = "true" }
 publish = ".next"
 command = "npm run build"
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-  
 [[plugins]]
-  package = "@netlify/plugin-nextjs"
+package = "@netlify/plugin-nextjs"

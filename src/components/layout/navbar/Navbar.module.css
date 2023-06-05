@@ -39,7 +39,6 @@
 }
 
 .iconContainer {
-  /* min-width: 40px; */
   height: 100%;
   display: flex;
   align-items: center;
@@ -72,10 +71,10 @@
   .responsiveNav {
     display: flex;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 0;
-    background: rgba(217, 217, 217, 0.9);
+    background: var(--nav-mobile);
     width: 40%;
     height: 100%;
     z-index: 1000;
@@ -115,7 +114,7 @@
   /* nav - open/close icon */
   .openIcon {
     display: block;
-    position: absolute;
+    position: fixed;
     right: 4%;
     top: 1%;
     width: 45px;

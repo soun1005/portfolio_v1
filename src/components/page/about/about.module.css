@@ -1,30 +1,28 @@
 .container {
   color: var(--color-text);
-  /* padding: var(--container-padding); */
 }
 
 .mainWrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 55%;
-  /* background-color: red; */
+  height: fit-content;
+  margin-bottom: 3rem;
 }
 
 .descWrap {
   width: 50%;
-  /* background-color: aquamarine; */
 }
 
 .descWrap h2 {
-  font-size: var(--fs-xlarge);
+  font-size: 5vw;
   font-family: var(--font-title);
   font-weight: 400;
   letter-spacing: -6px;
 }
 
 .title {
-  font-size: var(--fs-7);
+  font-size: 2vw;
   font-family: var(--font-title);
   font-weight: 400;
   letter-spacing: -1px;
@@ -33,11 +31,12 @@
 .desc {
   margin-top: 1rem;
   line-height: 1.5;
+  font-size: 1vw;
 }
 
 .photoWrap {
-  width: 20%;
-  height: 350px;
+  width: 12vw;
+  height: 30vh;
 }
 
 .photo {
@@ -81,7 +80,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding: 0 2rem; */
     padding-bottom: 2rem;
   }
   .mainWrap {

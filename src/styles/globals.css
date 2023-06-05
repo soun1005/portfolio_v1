@@ -1,10 +1,11 @@
-/* root */
+/************************ root ***********************/
 :root {
   /* color */
   --bgcolor-main: #ebebeb;
   --bgcolor-sub: #e4e4e4;
   --color-text: #3c4041;
   --color-accent: #ff3409;
+  --nav-mobile: rgba(217, 217, 217, 0.9);
 
   /* font */
   --font-title: 'Inria Serif', serif;
@@ -28,13 +29,104 @@
 
   /* container size */
   --container-height: 100vh;
-  --container-padding: 0 6rem;
+  --container-padding: 2rem 6rem 2rem 6rem;
   --container-maxwidth: 1600px;
   --container-margin: 0 auto;
 
   /* logo */
   --logo-weight: 700;
   --logo-spacing: 3px;
+}
+
+/************************ common values ***********************/
+.container {
+  max-width: var(--container-maxwidth);
+  height: var(--container-height);
+  margin: var(--container-margin);
+  padding: var(--container-padding);
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+}
+
+footer {
+  background-color: var(--bgcolor-main);
+}
+
+.skillsWrap,
+.aboutWrap {
+  background-color: var(--bgcolor-sub);
+}
+
+.title {
+  font-family: var(--font-title);
+  font-size: var(--fs-large);
+  font-weight: 500;
+  font-style: italic;
+  padding: 3rem 0;
+  text-decoration: underline;
+}
+
+/************************ dark mode ***********************/
+#dark main,
+#dark article,
+#dark body,
+#dark .footer {
+  /* color */
+  --bgcolor-main: #020a13;
+  --bgcolor-sub: #1b1f24;
+  --color-text: #ececec;
+  --nav-mobile: rgba(27, 31, 36, 0.9);
+}
+
+/************************ responsive ***********************/
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 1rem 3rem 1rem 3rem;
+  }
+}
+
+@media (max-width: 820px) {
+  .container {
+    padding: 1rem 3rem 1rem 3rem;
+  }
+  .title {
+    font-family: var(--font-title);
+    font-size: var(--fs-8);
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    max-width: 600px;
+    padding: 0 2rem;
+  }
+  .title {
+    font-family: var(--font-title);
+    font-size: var(--fs-8);
+    font-weight: 400;
+    padding: 3rem 0;
+    text-decoration: none;
+    text-align: center;
+    font-style: normal;
+  }
 }
 
 /************************ CSS reset ***********************/
@@ -117,80 +209,3 @@ h6 {
 }
 
 /* From : https://www.joshwcomeau.com/css/custom-css-reset/ */
-
-ul,
-li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-a {
-  text-decoration: none;
-  color: var(--color-text);
-}
-
-button {
-  background-color: transparent;
-  border: none;
-  color: white;
-}
-
-.container {
-  max-width: var(--container-maxwidth);
-  height: var(--container-height);
-  margin: var(--container-margin);
-  padding: var(--container-padding);
-}
-
-footer {
-  background-color: var(--bgcolor-main);
-}
-
-.skillsWrap,
-.aboutWrap {
-  background-color: var(--bgcolor-sub);
-}
-
-.title {
-  font-family: var(--font-title);
-  font-size: var(--fs-large);
-  font-weight: 500;
-  font-style: italic;
-  padding: 3rem 0;
-  text-decoration: underline;
-}
-
-#dark main,
-#dark article,
-#dark body,
-#dark .footer {
-  /* color */
-  --bgcolor-main: #020a13;
-  --bgcolor-sub: #1b1f24;
-  --color-text: #ececec;
-}
-
-@media (max-width: 820px) {
-  .title {
-    font-family: var(--font-title);
-    font-size: var(--fs-8);
-    font-weight: 400;
-  }
-}
-
-@media (max-width: 600px) {
-  .container {
-    max-width: 600px;
-    padding: 0 2rem;
-  }
-  .title {
-    font-family: var(--font-title);
-    font-size: var(--fs-8);
-    font-weight: 400;
-    padding: 3rem 0;
-    text-decoration: none;
-    text-align: center;
-    font-style: normal;
-  }
-}

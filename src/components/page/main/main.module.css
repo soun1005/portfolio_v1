@@ -1,15 +1,11 @@
 .container {
   /* Full screen height */
   height: 100vh;
-  padding: var(--container-padding);
-  max-width: 1600px;
-  margin: 0 auto;
   background-color: var(--bgcolor-main);
   color: var(--color-text);
 }
 
 /* wraps */
-
 .wrap {
   /* margin-top: 25px; */
   margin-bottom: 30px;
@@ -160,7 +156,7 @@
     margin-bottom: 0;
   }
   .heroWrap {
-    height: 78%;
+    height: 53vh;
     flex-direction: column;
     align-items: center;
   }
@@ -187,7 +183,7 @@
   }
   .photo {
     position: relative;
-    width: 65%;
+    width: 22vh;
   }
   .scrollWrap {
     width: 100%;

@@ -1,7 +1,6 @@
 .container {
   height: fit-content;
   background-color: var(--bgcolor-main);
-  /* color: var(--color-text); */
 }
 
 .title {

@@ -10,7 +10,7 @@ const Main = () => {
   const { isLightMode } = useAppContext();
 
   return (
-    <div className={styles.container}>
+    <div className={`container ${styles.container}`}>
       <Navbar />
       <div className={styles.wrap}>
         <div className={styles.heroWrap}>

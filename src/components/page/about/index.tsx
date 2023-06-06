@@ -13,14 +13,14 @@ const About = () => {
           <p className={styles.title}>frontend developer</p>
           <p className={styles.title}>from S.Korea based in Paris, France</p>
           <p className={styles.desc}>
-            Hello, I&apos;m Soeun from South Korea. I studied International
-            Trade at university and worked as a junior project manager at a
-            marketing company in Seoul for a little while. After that, I worked
-            for a Korean logistics company in Paris, France for two years. I had
-            a great opportunity to start attending a school where I could learn
-            to be a developer, which is something I&apos;ve always wanted to do.
-            I have always enjoyed learning new things and creating something,
-            and I will never stop learning, just as I always have.
+            I studied International Trade at university in Korea and worked as a
+            junior project manager at a marketing company in Seoul for a little
+            while. After that, I worked for a Korean logistics company in Paris,
+            France for two years. I had a great opportunity to start attending a
+            school where I could learn to be a developer, which is something
+            I&apos;ve always wanted to do. I have always enjoyed learning new
+            things and creating something, and I will never stop learning, just
+            as I always have.
           </p>
         </div>
         <div className={styles.photoWrap}>

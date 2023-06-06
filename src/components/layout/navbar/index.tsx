@@ -1,6 +1,4 @@
 import styles from './Navbar.module.css';
-// import Image from 'next/image';
-// import icon from '@/assets/nav/sunlightIcon.png';
 import { Link } from 'react-scroll/modules';
 import { useState } from 'react';
 import { useAppContext } from '@/pages/context/AppContext';

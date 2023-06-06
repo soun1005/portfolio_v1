@@ -1,6 +1,5 @@
 // HTML구조를 수정할 때 사용하는 파일, 오직 서버사이드에서만 렌더링
 import { Html, Head, Main, NextScript } from 'next/document';
-// import { Helmet } from 'react-helmet';
 
 export default function Document() {
   const thumbnailUrl = '/assets/thumb.png';
@@ -14,8 +13,11 @@ export default function Document() {
           rel="stylesheet"
         />
         <meta name="og:title" content="Soeun's portfolio" />
-        <meta name="og:description" content="Front-end developer, Soeun Lee" />
-        <meta property="og:image" content={thumbnailUrl} />
+        <meta
+          name="og:description"
+          content="This portfolio is created by Soeun Lee to show projects from school, personal projects and all about her"
+        />
+        <meta name="og:image" content={thumbnailUrl} />
       </Head>
       <body>
         <Main />

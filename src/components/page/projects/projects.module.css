@@ -7,9 +7,8 @@
   color: var(--color-text);
 }
 
-@media (max-width: 479px) {
+@media (max-width: 567px) {
   .container {
     height: fit-content;
-    /* background-color: aqua; */
   }
 }

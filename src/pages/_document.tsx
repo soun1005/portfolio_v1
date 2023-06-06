@@ -2,7 +2,6 @@
 import { Html, Head, Main, NextScript } from 'next/document';
 
 export default function Document() {
-  const thumbnailUrl = '/assets/thumb.png';
   return (
     <Html lang="en">
       <Head>
@@ -12,12 +11,6 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
           rel="stylesheet"
         />
-        <meta name="og:title" content="Soeun's portfolio" />
-        <meta
-          name="og:description"
-          content="This portfolio is created by Soeun Lee to show projects from school, personal projects and all about her"
-        />
-        <meta name="og:image" content={thumbnailUrl} />
       </Head>
       <body>
         <Main />

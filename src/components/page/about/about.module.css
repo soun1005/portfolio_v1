@@ -36,13 +36,24 @@
 
 .photoWrap {
   width: 12vw;
-  height: 30vh;
+  height: 43vh;
 }
 
 .photo {
   object-fit: cover;
   /* width: inherit; */
   height: inherit;
+}
+
+@media (max-width: 1300px) {
+  .container {
+    height: fit-content;
+    padding-bottom: 3rem;
+  }
+  .photoWrap {
+    width: 12vw;
+    height: 25vh;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -60,8 +71,8 @@
     font-size: 5vw;
   }
   .photoWrap {
-    width: 20%;
-    height: 180px;
+    width: 12vw;
+    height: 20vh;
   }
   .descWrap {
     width: 70%;

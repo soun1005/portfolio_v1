@@ -1,8 +1,6 @@
 // HTML구조를 수정할 때 사용하는 파일, 오직 서버사이드에서만 렌더링
 import { Html, Head, Main, NextScript } from 'next/document';
-import { Helmet } from 'react-helmet';
-import Image from 'next/image';
-import thumbnail from '@/assets/thumb.png';
+// import { Helmet } from 'react-helmet';
 
 export default function Document() {
   const thumbnailUrl = '/assets/thumb.png';
@@ -15,11 +13,9 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
           rel="stylesheet"
         />
-
-        <Helmet>
-          <meta name="description" content="Soeun's portfolio" />
-          <meta property="og:image" content={thumbnailUrl} />
-        </Helmet>
+        <meta name="og:title" content="Soeun's portfolio" />
+        <meta name="og:description" content="Front-end developer, Soeun Lee" />
+        <meta property="og:image" content={thumbnailUrl} />
       </Head>
       <body>
         <Main />

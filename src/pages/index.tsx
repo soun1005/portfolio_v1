@@ -11,7 +11,7 @@ import { useAppContext } from './context/AppContext';
 
 export default function Home(): JSX.Element {
   const { isLightMode } = useAppContext();
-  const thumbnailUrl = '@/assets/thumb.png';
+  const thumbnailUrl = '/assets/thumb.png';
   return (
     <>
       <Head>

@@ -122,9 +122,17 @@
 }
 
 /* responsive design */
+
+@media (min-width: 2400px) {
+  .photo {
+    width: 35%;
+    height: fit-content;
+  }
+}
+
 @media (min-width: 1800px) {
   .photo {
-    width: 30%;
+    width: 25%;
     height: fit-content;
   }
 }

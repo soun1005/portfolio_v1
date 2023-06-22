@@ -28,7 +28,7 @@
 }
 
 .desc {
-  margin-top: 1rem;
+  margin-top: 3rem;
   line-height: 1.5;
   font-size: 1vw;
 }
@@ -52,6 +52,9 @@
   .photoWrap {
     width: 12vw;
     height: 25vh;
+  }
+  .desc {
+    margin-top: 1rem;
   }
 }
 

@@ -5,6 +5,7 @@
   align-items: center;
   font-family: var(--font-logo);
   height: 6rem;
+  padding-bottom: 2rem;
 }
 
 .desktopNav {
@@ -77,7 +78,7 @@
     background: var(--nav-mobile);
     width: 40%;
     height: 100%;
-    z-index: 1000;
+    z-index: 9999;
     animation-name: sideNavOpen;
     animation-duration: 1s;
     animation-direction: alternate;
@@ -120,7 +121,7 @@
     width: 45px;
     height: 45px;
     transition-duration: 0.5s;
-    z-index: 9999;
+    z-index: 99999;
     transition: 1s;
   }
   .open {

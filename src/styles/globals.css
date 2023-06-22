@@ -23,6 +23,10 @@
   --fs-8: 30px;
   --fs-large: 60px;
   --fs-xlarge: 86px;
+  --fs-text: clamp(9px, 1vw + 10px, 2rem);
+  --fs-subtitle: clamp(12px, 1vw + 1rem, 3rem);
+  --fs-title: clamp(3rem, 12vw + 1rem, 8rem);
+  --fs-title2: clamp(3rem, 12vw + 1rem, 7rem);
 
   /* shadow */
   --shadow-card: 0px 4px 4px 0px #00000040;

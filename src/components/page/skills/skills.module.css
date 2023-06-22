@@ -10,11 +10,11 @@
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 6%;
+  grid-column-gap: 3%;
   grid-row-gap: 0px;
   margin-bottom: 3rem;
-  justify-items: center;
-  height: 77%;
+  align-items: center;
+  height: 65%;
 }
 
 @media (max-width: 567px) {
@@ -31,7 +31,7 @@
     justify-content: center;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .container {
     height: fit-content;
     padding-bottom: 3rem;

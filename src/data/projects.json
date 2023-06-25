@@ -70,5 +70,14 @@
     "demoLink": "https://sportseesoeunlee.netlify.app/",
     "github": "https://github.com/soun1005/op-p12_SportSee",
     "screenshot": "/screenshots/sportsee.png"
+  },
+  {
+    "id": 8,
+    "title": "Openclassrooms project #13 - ArgentBank",
+    "description": "Authenticating with API from backend and manage state by Redux.",
+    "tags": ["React", "API", "Redux", "Swagger UI"],
+    "demoLink": null,
+    "github": "https://github.com/soun1005/op-p13_ArgentBank",
+    "screenshot": "/screenshots/argentbank.png"
   }
 ]

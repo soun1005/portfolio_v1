@@ -7,5 +7,14 @@
     "demoLink": "https://www.portfolio.soeunlee.dev/",
     "github": "https://github.com/soun1005/portfolio_v1",
     "screenshot": "/screenshots/portfolio.png"
+  },
+  {
+    "id": 2,
+    "title": "QT To do list",
+    "description": "Done by Vanilla JS and CSS",
+    "tags": ["Vanilla JS"],
+    "demoLink": "https://todolist.soeunlee.dev/",
+    "github": "https://github.com/soun1005/qt-Todolist",
+    "screenshot": "/screenshots/todolist.png"
   }
 ]

@@ -9,7 +9,7 @@
 .cardWrap {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 3%;
   grid-row-gap: 0px;
   margin-bottom: 3rem;

@@ -17,3 +17,5 @@
 ##### - Features a day/night mode switch 🌝🌚
 
 ##### - Fully responsive design 📱
+
+#### - Deployed by Netlify 🧬

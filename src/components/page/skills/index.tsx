@@ -15,6 +15,10 @@ import ts from '@/assets/skillIcons/ts.png';
 import boot from '@/assets/skillIcons/boot.png';
 import tailwind from '@/assets/skillIcons/tailwind.png';
 import redux from '@/assets/skillIcons/redux.png';
+import nodejs from '@/assets/skillIcons/nodejs.webp';
+import expressjs from '@/assets/skillIcons/expressjs.png';
+import expressjsW from '@/assets/skillIcons/expressjsW.png';
+import mongodb from '@/assets/skillIcons/mongodb.png';
 import { useAppContext } from '@/pages/context/AppContext';
 
 const Skills = () => {
@@ -25,7 +29,14 @@ const Skills = () => {
       <h1 className="title">Skills</h1>
       <div className={styles.cardWrap}>
         <Card title="JAVASCRIPT" image={js} />
+        <Card title="NODE JS" image={nodejs} />
         <Card title="REACT" image={react} />
+        {isLightMode ? (
+          <Card title="EXPRESS.JS" image={expressjs} />
+        ) : (
+          <Card title="EXPRESS.JS" image={expressjsW} />
+        )}
+        <Card title="MONGODB" image={mongodb} />
         <Card title="HTML" image={html} />
         <Card title="CSS" image={css} />
         <Card title="SCSS" image={sass} />

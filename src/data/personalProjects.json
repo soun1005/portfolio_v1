@@ -16,5 +16,14 @@
     "demoLink": "https://todolist.soeunlee.dev/",
     "github": "https://github.com/soun1005/qt-Todolist",
     "screenshot": "/screenshots/todolist.png"
+  },
+  {
+    "id": 3,
+    "title": "***In construction***",
+    "description": "First fullstack project with MERN stack",
+    "tags": ["React.js", "Node.js", "MongoDB", "Express.js"],
+    "demoLink": "",
+    "github": "https://github.com/soun1005/cinelog",
+    "screenshot": "/screenshots/cinelog.png"
   }
 ]

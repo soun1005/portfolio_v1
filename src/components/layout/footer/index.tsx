@@ -21,7 +21,7 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/16_HP-3nj9VZ9QGqrydSi9gU82031UkOD/view?usp=sharing"
+            href="https://drive.google.com/file/d/1MKfPup7VYcaG3wsxv-FjqTtJq_hCDfAv/view?usp=drive_link"
             target="_blank"
           >
             View CV

@@ -19,8 +19,8 @@
   },
   {
     "id": 3,
-    "title": "*Published but in construction*",
-    "description": "First fullstack project with MERN stack",
+    "title": "Cinelog *in contruction*",
+    "description": "Fullstack project with MERN stack. Movie informations, personal reviews and favourite movies",
     "tags": ["React.js", "Node.js", "MongoDB", "Express.js"],
     "demoLink": "https://cinelog.soeunlee.dev/",
     "github": "https://github.com/soun1005/cinelog",

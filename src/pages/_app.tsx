@@ -8,18 +8,22 @@ import Script from 'next/script';
 const inter = Inter({ subsets: ['latin'] });
 
 export default function App({ Component, pageProps }: AppProps): JSX.Element {
+  const googleAnalyticsId = 'G-FMSDRKD1ZD';
+
   return (
     <AppContextProvider>
       <Component {...pageProps} />
       <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsId}`}
       ></Script>
       <Script id="google-analytics">
         {`
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}');
+    gtag('config', '${googleAnalyticsId}',{
+      page_path: window.location.pathname,
+      });
   `}
       </Script>
     </AppContextProvider>

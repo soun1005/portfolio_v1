@@ -21,10 +21,10 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="https://drive.google.com/file/d/1MKfPup7VYcaG3wsxv-FjqTtJq_hCDfAv/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1zRGXDvScqKHc-BAjI7xDujSpfOCfaOsW/view?usp=drive_link"
             target="_blank"
           >
-            View CV
+            View CV(EN/FR)
           </a>
         </li>
         <li>

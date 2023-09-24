@@ -28,8 +28,8 @@ const About = () => {
         </div>
       </div>
       <Button
-        text="VIEW CV"
-        link="https://drive.google.com/file/d/1MKfPup7VYcaG3wsxv-FjqTtJq_hCDfAv/view?usp=drive_link"
+        text="VIEW CV(EN/FR)"
+        link="https://drive.google.com/file/d/1zRGXDvScqKHc-BAjI7xDujSpfOCfaOsW/view?usp=drive_link"
       />
     </div>
   );

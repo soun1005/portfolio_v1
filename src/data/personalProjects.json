@@ -25,5 +25,14 @@
     "demoLink": "https://cinelog.soeunlee.dev/",
     "github": "https://github.com/soun1005/cinelog",
     "screenshot": "/screenshots/cinelog.png"
+  },
+  {
+    "id": 4,
+    "title": "iphone calculator clone coding",
+    "description": "Small clone coding project to practice logics and built-in Math methods in JS",
+    "tags": ["React.js", "responsive"],
+    "demoLink": "https://i-calcul.soeunlee.dev/",
+    "github": "https://github.com/soun1005/i-calculator_clonecoding",
+    "screenshot": "/screenshots/icalcul.png"
   }
 ]

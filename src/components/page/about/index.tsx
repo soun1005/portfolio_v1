@@ -29,7 +29,7 @@ const About = () => {
       </div>
       <Button
         text="VIEW CV(EN/FR)"
-        link="https://drive.google.com/file/d/1zRGXDvScqKHc-BAjI7xDujSpfOCfaOsW/view?usp=drive_link"
+        link="https://drive.google.com/file/d/1FdRoo3PKzmyJbDq7XZKlyMNRWUnF7Haz/view?usp=sharing"
       />
     </div>
   );

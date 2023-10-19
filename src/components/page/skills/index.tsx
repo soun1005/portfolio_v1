@@ -19,6 +19,7 @@ import nodejs from '@/assets/skillIcons/nodejs.webp';
 import expressjs from '@/assets/skillIcons/expressjs.png';
 import expressjsW from '@/assets/skillIcons/expressjsW.png';
 import mongodb from '@/assets/skillIcons/mongodb.png';
+import postgre from '@/assets/skillIcons/postgres.png';
 import { useAppContext } from '@/pages/context/AppContext';
 
 const Skills = () => {
@@ -54,6 +55,7 @@ const Skills = () => {
         )}
 
         <Card title="TYPESCRIPT" image={ts} />
+        <Card title="POSTGRESQL" image={postgre} />
       </div>
     </div>
   );

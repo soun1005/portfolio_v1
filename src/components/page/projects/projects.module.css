@@ -5,10 +5,64 @@
 
 .title {
   color: var(--color-text);
+  cursor: pointer;
+}
+
+.arrowUp,
+.arrowDown {
+  width: 30px;
+  height: auto;
+  display: inline;
+  margin-left: 2.5rem;
+  -webkit-animation: bounce 1s ease-in-out infinite;
+  animation: bounce 1s ease-in-out infinite;
+}
+
+@media (max-width: 1085px) {
+  .arrowUp,
+  .arrowDown {
+    width: 18px;
+    height: auto;
+    display: inline;
+    margin-left: 1.5rem;
+  }
 }
 
 @media (max-width: 567px) {
   .container {
     height: fit-content;
+  }
+
+  .arrowUp,
+  .arrowDown {
+    width: 15px;
+    margin-left: 1rem;
+    -webkit-animation: bounceLess 1s ease-in-out infinite;
+    animation: bounceLess 1s ease-in-out infinite;
+  }
+}
+
+/* bounce */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  0% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceLess {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  0% {
+    transform: translateY(0);
   }
 }

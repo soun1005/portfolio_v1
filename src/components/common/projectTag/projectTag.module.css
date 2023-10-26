@@ -3,14 +3,15 @@
   background-color: var(--bgcolor-sub);
   width: fit-content;
   color: var(--color-text);
-  border-radius: 10px;
+  border-radius: 5px;
   height: 23px;
   vertical-align: center;
-  width: 6rem;
+  /* width: 6rem; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 0 15px;
 }
 
 .container span {

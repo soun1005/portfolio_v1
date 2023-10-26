@@ -129,8 +129,8 @@
   width: 2rem;
   height: fit-content;
   margin-bottom: 10px;
-  -webkit-animation: bounceTop 1.7s ease-in-out infinite;
-  animation: bounceTop 1.7s ease-in-out infinite;
+  -webkit-animation: bounceTop 1s ease-in-out infinite;
+  animation: bounceTop 1s ease-in-out infinite;
 }
 
 /************* photo *************/
@@ -294,6 +294,18 @@
 
 @keyframes fallBackwards {
   100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceTop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  0% {
     transform: translateY(0);
   }
 }

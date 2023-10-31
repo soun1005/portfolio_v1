@@ -298,6 +298,7 @@
   }
 }
 
+/* bounce */
 @keyframes bounceTop {
   0% {
     transform: translateY(0);

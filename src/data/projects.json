@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Openclassrooms project #2 - Bookie",
     "description": "Fully responsive website to book accomodations.",
-    "tags": ["HTML", "CSS"],
+    "tags": ["HTML", "CSS", "Responsive"],
     "demoLink": "https://bookiesoeunlee.netlify.app/",
     "github": "https://github.com/soun1005/op-p2_Booki",
     "screenshot": "/screenshots/bookie.png"
@@ -12,7 +12,7 @@
     "id": 2,
     "title": "Openclassrooms project #3 - Ohmyfood",
     "description": "An application to order food from gourmet restaurants.",
-    "tags": ["HTML", "SASS"],
+    "tags": ["HTML", "SASS", "Responsive"],
     "demoLink": "https://soun1005.github.io/op-p3_Ohmyfood/",
     "github": "https://github.com/soun1005/op-p3_Ohmyfood",
     "screenshot": "/screenshots/ohmyfood.png"
@@ -21,7 +21,7 @@
     "id": 3,
     "title": "Openclassrooms project #4 - GameOn",
     "description": "A landing page for a game conferences and contests company.",
-    "tags": ["HTML", "CSS", "JavaScript"],
+    "tags": ["HTML", "CSS", "JavaScript", "Responsive"],
     "demoLink": "https://soun1005.github.io/op-p4_GameOn/",
     "github": "https://github.com/soun1005/op-p4_GameOn",
     "screenshot": "/screenshots/gameon.png"
@@ -39,7 +39,7 @@
     "id": 5,
     "title": "Openclassrooms project #7 - Les petit plats",
     "description": "Single page website to search recipes.",
-    "tags": ["HTML", "SASS", "JavaScript"],
+    "tags": ["HTML", "SASS", "JavaScript", "Algorithm", "Responsive"],
     "demoLink": "https://soun1005.github.io/op-p7_Lespetitsplats/",
     "github": "https://github.com/soun1005/op-p7_Lespetitsplats",
     "screenshot": "/screenshots/lespetitplats.png"
@@ -57,7 +57,7 @@
     "id": 7,
     "title": "Openclassrooms project #11 - Kasa",
     "description": "A website to showcase accomodations.",
-    "tags": ["React", "React-router"],
+    "tags": ["React", "React-router", "Responsive"],
     "demoLink": "https://kasasoeunlee.netlify.app/",
     "github": "https://github.com/soun1005/op-p11_Kasa",
     "screenshot": "/screenshots/kasa.png"
@@ -75,9 +75,26 @@
     "id": 9,
     "title": "Openclassrooms project #13 - ArgentBank",
     "description": "Authenticating with API from backend and manage state by Redux.",
-    "tags": ["React", "API", "Redux", "Swagger UI"],
+    "tags": ["React", "API", "JWT", "Redux", "Swagger UI", "Responsive"],
     "demoLink": null,
     "github": "https://github.com/soun1005/op-p13_ArgentBank",
     "screenshot": "/screenshots/argentbank.png"
+  },
+  {
+    "id": 10,
+    "title": "Openclassrooms project #14 - HRnet",
+    "description": "Switch a jQuery library to React, publish modal package on NPM",
+    "tags": [
+      "React",
+      "NPM package",
+      "Redux",
+      "Redux persist",
+      "Typescript",
+      "TailwindCSS",
+      "Responsive"
+    ],
+    "demoLink": "https://hrnetsoeunlee.netlify.app/",
+    "github": "https://github.com/soun1005/op-p14_HRNet",
+    "screenshot": "/screenshots/P14.png"
   }
 ]

@@ -86,7 +86,7 @@
     "description": "Switch a jQuery library to React, publish modal package on NPM",
     "tags": [
       "React",
-      "NPM package",
+      "NPM",
       "Redux",
       "Redux persist",
       "Typescript",

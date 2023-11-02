@@ -33,6 +33,7 @@ const Main = () => {
               <span>V</span>
               <span>E</span>
               <span>L</span>
+              <span>O</span>
               <span>P</span>
               <span>E</span>
               <span>R</span>

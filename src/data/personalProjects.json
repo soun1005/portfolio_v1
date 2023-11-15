@@ -3,10 +3,28 @@
     "id": 1,
     "title": "Portfolio V1",
     "description": "Fully responsive personal portfolio of myself",
-    "tags": ["Next.js", "Typescript"],
+    "tags": ["Next.js", "Typescript", "contextAPI"],
     "demoLink": "https://www.portfolio.soeunlee.dev/",
     "github": "https://github.com/soun1005/portfolio_v1",
     "screenshot": "/screenshots/portfolio.png"
+  },
+  {
+    "id": 3,
+    "title": "Cinelog *in contruction*",
+    "description": "Fullstack made with MERN stack. Login/signup, ",
+    "tags": [
+      "MERNstack",
+      "Fullstack",
+      "TMDB API",
+      "JWT",
+      "Axios",
+      "Yup",
+      "Redux",
+      "Redux persist"
+    ],
+    "demoLink": "https://cinelog.soeunlee.dev/",
+    "github": "https://github.com/soun1005/cinelog",
+    "screenshot": "/screenshots/cinelog.png"
   },
   {
     "id": 2,
@@ -18,21 +36,21 @@
     "screenshot": "/screenshots/todolist.png"
   },
   {
-    "id": 3,
-    "title": "Cinelog *in contruction*",
-    "description": "Fullstack project with MERN stack. Movie informations, personal reviews and favourite movies",
-    "tags": ["React.js", "Node.js", "MongoDB", "Express.js"],
-    "demoLink": "https://cinelog.soeunlee.dev/",
-    "github": "https://github.com/soun1005/cinelog",
-    "screenshot": "/screenshots/cinelog.png"
-  },
-  {
     "id": 4,
     "title": "iphone calculator clone coding",
     "description": "Small clone coding project to practice logics and built-in Math methods in JS",
-    "tags": ["React.js", "responsive"],
+    "tags": ["React.js", "Responsive"],
     "demoLink": "https://i-calcul.soeunlee.dev/",
     "github": "https://github.com/soun1005/i-calculator_clonecoding",
     "screenshot": "/screenshots/icalcul.png"
+  },
+  {
+    "id": 5,
+    "title": "Hangman game",
+    "description": "Hangman game to practice typescript",
+    "tags": ["Typescript", "React.js", "Responsive", "API"],
+    "demoLink": "https://hangman-soeunlee.netlify.app",
+    "github": "https://github.com/soun1005/hangman_game",
+    "screenshot": "/screenshots/hangman.png"
   }
 ]

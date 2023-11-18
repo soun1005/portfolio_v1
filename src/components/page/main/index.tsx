@@ -5,6 +5,9 @@ import profilePic from '@/assets/mainPage/portfolio.jpeg';
 import arrowDown from '@/assets/mainPage/arrow_down.png';
 import arrowWhite from '@/assets/mainPage/arrow_white.png';
 import { useAppContext } from '@/pages/context/AppContext';
+import { AnimatedText } from '@/components/framer-motion-utils/AnimatedText';
+import { Appearance } from '@/components/framer-motion-utils/Appearance';
+import { motion } from 'framer-motion';
 
 const Main = () => {
   const { isLightMode } = useAppContext();
@@ -16,29 +19,26 @@ const Main = () => {
         <div className={styles.heroWrap}>
           <div className={styles.textWrap}>
             <div className={styles.firstRow}>
-              <span>F</span>
-              <span>R</span>
-              <span>O</span>
-              <span>N</span>
-              <span>T</span>
-              <span>E</span>
-              <span>N</span>
-              <span>D</span>
+              <AnimatedText
+                el="span"
+                text={['FRONTEND', 'DEVELOPER']}
+                className="heroText"
+              />
             </div>
-            <div className={styles.secondRow}>
-              <span>D</span>
-              <span>E</span>
-              <span>V</span>
-              <span>E</span>
-              <span>L</span>
-              <span>O</span>
-              <span>P</span>
-              <span>E</span>
-              <span>R</span>
-            </div>
-            <p className={`${styles.paragraph} ${styles.reactP} `}>
-              - SPECIALISED IN REACT
-            </p>
+            <Appearance
+              customAnimation={{
+                variants: {
+                  hidden: { opacity: 0, x: -50 },
+                  visible: { opacity: 1, x: 0 },
+                },
+                initial: 'hidden',
+                transition: { duration: 0.5 },
+              }}
+            >
+              <p className={`${styles.paragraph} ${styles.reactP} `}>
+                - SPECIALISED IN REACT
+              </p>
+            </Appearance>
           </div>
 
           <Image
@@ -59,21 +59,25 @@ const Main = () => {
             <span>SCROLL</span>
           </div>
           <div className={styles.bottomWrap}>
-            <p className={styles.paragraph}>- SOON TO BE FULL-STACK</p>
-            <div className={styles.nameWrap}>
-              <span className={styles.nameFirstRow}>
-                <span>S</span>
-                <span>O</span>
-                <span>E</span>
-                <span>U</span>
-                <span>N</span>
-              </span>
-              <span className={styles.nameSecondRow}>
-                <span>L</span>
-                <span>E</span>
-                <span>E</span>
-              </span>
-            </div>
+            <Appearance
+              customAnimation={{
+                variants: {
+                  hidden: { opacity: 0, x: 100 },
+                  visible: { opacity: 1, x: 0 },
+                },
+                initial: 'hidden',
+                transition: { duration: 0.5 },
+              }}
+            >
+              <div className={styles.nameWrap}>
+                <span className={styles.nameFirstRow}>
+                  <span>SOEUN</span>
+                </span>
+                <span className={styles.nameSecondRow}>
+                  <span>LEE</span>
+                </span>
+              </div>
+            </Appearance>
           </div>
         </div>
       </div>

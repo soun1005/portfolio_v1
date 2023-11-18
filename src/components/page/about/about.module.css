@@ -101,6 +101,7 @@
   .photoWrap {
     width: 30%;
     height: 200px;
+    margin: 0 auto;
   }
   .descWrap {
     width: 90%;

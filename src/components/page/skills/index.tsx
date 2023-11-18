@@ -21,42 +21,54 @@ import expressjsW from '@/assets/skillIcons/expressjsW.png';
 import mongodb from '@/assets/skillIcons/mongodb.png';
 import postgre from '@/assets/skillIcons/postgres.png';
 import { useAppContext } from '@/pages/context/AppContext';
+import { Appearance } from '@/components/framer-motion-utils/Appearance';
 
 const Skills = () => {
   const { isLightMode } = useAppContext();
+
   return (
     <div className={`container ${styles.container}`} id="skills">
       <h1 className="title">Skills</h1>
+      <Appearance
+        customAnimation={{
+          variants: {
+            hidden: { opacity: 0, y: 100 },
+            visible: { opacity: 1, y: 0 },
+          },
+          initial: 'hidden',
+          transition: { duration: 0.5 },
+        }}
+      >
+        <div className={styles.cardWrap}>
+          <Card title="JAVASCRIPT" image={js} />
+          <Card title="NODE JS" image={nodejs} />
+          <Card title="REACT" image={react} />
+          {isLightMode ? (
+            <Card title="EXPRESS.JS" image={expressjs} />
+          ) : (
+            <Card title="EXPRESS.JS" image={expressjsW} />
+          )}
+          <Card title="MONGODB" image={mongodb} />
+          <Card title="HTML" image={html} />
+          <Card title="CSS" image={css} />
+          <Card title="SCSS" image={sass} />
+          <Card title="BOOTSTRAP" image={boot} />
+          <Card title="TAILWIND" image={tailwind} />
+          <Card title="GIT" image={git} />
+          <Card title="GITHUB" image={github} />
+          <Card title="REDUX" image={redux} />
+          <Card title="JEST" image={jest} />
+          <Card title="FIGMA" image={figma} />
+          {isLightMode ? (
+            <Card title="NEXT.JS" image={next} />
+          ) : (
+            <Card title="NEXT.JS" image={nextW} />
+          )}
 
-      <div className={styles.cardWrap}>
-        <Card title="JAVASCRIPT" image={js} />
-        <Card title="NODE JS" image={nodejs} />
-        <Card title="REACT" image={react} />
-        {isLightMode ? (
-          <Card title="EXPRESS.JS" image={expressjs} />
-        ) : (
-          <Card title="EXPRESS.JS" image={expressjsW} />
-        )}
-        <Card title="MONGODB" image={mongodb} />
-        <Card title="HTML" image={html} />
-        <Card title="CSS" image={css} />
-        <Card title="SCSS" image={sass} />
-        <Card title="BOOTSTRAP" image={boot} />
-        <Card title="TAILWIND" image={tailwind} />
-        <Card title="GIT" image={git} />
-        <Card title="GITHUB" image={github} />
-        <Card title="REDUX" image={redux} />
-        <Card title="JEST" image={jest} />
-        <Card title="FIGMA" image={figma} />
-        {isLightMode ? (
-          <Card title="NEXT.JS" image={next} />
-        ) : (
-          <Card title="NEXT.JS" image={nextW} />
-        )}
-
-        <Card title="TYPESCRIPT" image={ts} />
-        <Card title="POSTGRESQL" image={postgre} />
-      </div>
+          <Card title="TYPESCRIPT" image={ts} />
+          <Card title="POSTGRESQL" image={postgre} />
+        </div>
+      </Appearance>
     </div>
   );
 };

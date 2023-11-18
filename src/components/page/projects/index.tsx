@@ -9,7 +9,6 @@ import down from '@/assets/down.png';
 import up_gray from '@/assets/up_gray.png';
 import down_gray from '@/assets/down_gray.png';
 import { useAppContext } from '@/pages/context/AppContext';
-import { Reveal } from '@/components/utils/Reveal';
 
 const Projects = () => {
   const [personal, setPersonal] = useState(false);
@@ -79,11 +78,9 @@ const Projects = () => {
       </h1>
 
       {personal ? (
-        <Reveal>
-          <div className={styles.cardContainer}>
-            <ProjectCard data={personalProjectData} />
-          </div>
-        </Reveal>
+        <div className={styles.cardContainer}>
+          <ProjectCard data={personalProjectData} />
+        </div>
       ) : (
         ''
       )}
@@ -123,11 +120,9 @@ const Projects = () => {
         )}
       </h1>
       {school ? (
-        <Reveal>
-          <div className={styles.cardContainer}>
-            <ProjectCard data={data} />
-          </div>
-        </Reveal>
+        <div className={styles.cardContainer}>
+          <ProjectCard data={data} />
+        </div>
       ) : (
         ''
       )}

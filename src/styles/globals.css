@@ -213,3 +213,11 @@ h6 {
 }
 
 /* From  https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+.heroText,
+.inline-block {
+  display: inline-block;
+}
+.block {
+  display: block;
+}

@@ -28,6 +28,6 @@
 @media (max-width: 567px) {
   .container {
     height: 40px;
-    width: 45%;
+    width: 100%;
   }
 }

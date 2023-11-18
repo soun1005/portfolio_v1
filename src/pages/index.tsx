@@ -8,7 +8,6 @@ import Skills from '@/components/page/skills';
 import About from '@/components/page/about';
 import Projects from '@/components/page/projects';
 import { useAppContext } from './context/AppContext';
-import { Reveal } from '@/components/utils/Reveal';
 
 export default function Home(): JSX.Element {
   const { isLightMode } = useAppContext();
@@ -30,19 +29,15 @@ export default function Home(): JSX.Element {
           <Main />
           <ArrowUp />
         </main>
-        <Reveal>
-          <article className="skillsWrap">
-            <Skills />
-          </article>
-        </Reveal>
+        <article className="skillsWrap">
+          <Skills />
+        </article>
         <article className="projectWrap">
           <Projects />
         </article>
-        <Reveal>
-          <article className="aboutWrap">
-            <About />
-          </article>
-        </Reveal>
+        <article className="aboutWrap">
+          <About />
+        </article>
         <footer className="footer">
           <Footer />
         </footer>

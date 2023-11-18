@@ -3,7 +3,7 @@
     "id": 1,
     "title": "Portfolio V1",
     "description": "Fully responsive personal portfolio of myself",
-    "tags": ["Next.js", "Typescript", "contextAPI"],
+    "tags": ["Next.js", "Typescript", "contextAPI", "Framer-motion"],
     "demoLink": "https://www.portfolio.soeunlee.dev/",
     "github": "https://github.com/soun1005/portfolio_v1",
     "screenshot": "/screenshots/portfolio.png"

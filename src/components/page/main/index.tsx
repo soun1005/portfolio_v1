@@ -15,8 +15,6 @@ const Main = () => {
       <div className={styles.wrap}>
         <div className={styles.heroWrap}>
           <div className={styles.textWrap}>
-            {/* <span className={styles.heroText}>FRONTEND </span>
-            <span className={styles.heroText}>DEVELOPER </span> */}
             <div className={styles.firstRow}>
               <span>F</span>
               <span>R</span>
@@ -42,6 +40,7 @@ const Main = () => {
               - SPECIALISED IN REACT
             </p>
           </div>
+
           <Image
             src={profilePic}
             alt="profile photo"

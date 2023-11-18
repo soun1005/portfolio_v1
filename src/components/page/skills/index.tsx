@@ -24,10 +24,10 @@ import { useAppContext } from '@/pages/context/AppContext';
 
 const Skills = () => {
   const { isLightMode } = useAppContext();
-
   return (
     <div className={`container ${styles.container}`} id="skills">
       <h1 className="title">Skills</h1>
+
       <div className={styles.cardWrap}>
         <Card title="JAVASCRIPT" image={js} />
         <Card title="NODE JS" image={nodejs} />

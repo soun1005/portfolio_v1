@@ -29,10 +29,6 @@
 }
 
 @media (max-width: 567px) {
-  .container {
-    height: fit-content;
-  }
-
   .arrowUp,
   .arrowDown {
     width: 15px;

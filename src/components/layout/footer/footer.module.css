@@ -43,7 +43,6 @@
 
 @media (max-width: 1000px) {
   .container {
-    height: fit-content;
     flex-direction: column;
     padding: 9rem 0;
   }

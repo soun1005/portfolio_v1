@@ -29,16 +29,7 @@ const Skills = () => {
   return (
     <div className={`container ${styles.container}`} id="skills">
       <h1 className="title">Skills</h1>
-      <Appearance
-        customAnimation={{
-          variants: {
-            hidden: { opacity: 0, y: 100 },
-            visible: { opacity: 1, y: 0 },
-          },
-          initial: 'hidden',
-          transition: { duration: 0.5 },
-        }}
-      >
+      <Appearance>
         <div className={styles.cardWrap}>
           <Card title="JAVASCRIPT" image={js} />
           <Card title="NODE JS" image={nodejs} />

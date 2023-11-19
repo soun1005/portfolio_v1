@@ -3,6 +3,7 @@ import Button from '@/components/common/button';
 import Image from 'next/image';
 import profile from '@/assets/me.jpeg';
 import { Appearance } from '@/components/framer-motion-utils/Appearance';
+import { easeInOut } from 'framer-motion';
 
 const About = () => {
   return (
@@ -17,7 +18,7 @@ const About = () => {
               visible: { opacity: 1, x: 0 },
             },
             initial: 'hidden',
-            transition: { duration: 0.5 },
+            transition: { duration: 0.4, delay: 0.5, ease: easeInOut },
           }}
         >
           <div className={styles.descWrap}>
@@ -26,9 +27,9 @@ const About = () => {
             <p className={styles.title}>from S.Korea based in Paris, France</p>
             <p className={styles.desc}>
               I studied International Trade at university in Korea and worked as
-              a junior project manager at a marketing company in Seoul for a
-              little while. After that, I worked for a Korean logistics company
-              in Paris, France for two years. I had a great opportunity to start
+              a project manager at a marketing company in Seoul for a little
+              while. After that, I worked for a Korean logistics company in
+              Paris, France for two years. I had a great opportunity to start
               attending a school where I could learn to be a developer, which is
               something I&apos;ve always wanted to do. I have always enjoyed
               learning new things and creating something, and I will never stop
@@ -39,11 +40,11 @@ const About = () => {
         <Appearance
           customAnimation={{
             variants: {
-              hidden: { opacity: 0, x: 100 },
+              hidden: { opacity: 0, x: 50 },
               visible: { opacity: 1, x: 0 },
             },
             initial: 'hidden',
-            transition: { duration: 0.5 },
+            transition: { duration: 0.4, delay: 0.5, ease: easeInOut },
           }}
         >
           <div className={styles.photoWrap}>
@@ -55,11 +56,11 @@ const About = () => {
         width="100%"
         customAnimation={{
           variants: {
-            hidden: { opacity: 0, y: 80 },
+            hidden: { opacity: 0, y: -80 },
             visible: { opacity: 1, y: 0 },
           },
           initial: 'hidden',
-          transition: { duration: 0.5 },
+          transition: { duration: 0.4, delay: 0.5, ease: easeInOut },
         }}
       >
         <Button

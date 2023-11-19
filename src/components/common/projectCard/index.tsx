@@ -3,6 +3,7 @@ import Button from '@/components/common/button';
 import Image from 'next/image';
 import Tag from '../projectTag';
 import { Appearance } from '@/components/framer-motion-utils/Appearance';
+import { easeInOut } from 'framer-motion';
 
 type Project = {
   id: number;
@@ -32,11 +33,15 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
         width="100%"
         customAnimation={{
           variants: {
-            hidden: { opacity: 0, y: 20 },
+            hidden: { opacity: 0, y: 90 },
             visible: { opacity: 1, y: 0 },
           },
           initial: 'hidden',
-          transition: { duration: 0.5 },
+          transition: {
+            duration: 0.4,
+            delay: 0.5,
+            ease: easeInOut,
+          },
         }}
       >
         <div className={styles.cardWrap} key={id}>

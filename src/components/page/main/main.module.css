@@ -52,6 +52,11 @@
   align-items: center;
 }
 
+.imgContainer {
+  width: 23%;
+  height: 100%;
+}
+
 /************* texts *************/
 .heroText {
   font-size: var(--fs-title);
@@ -106,7 +111,18 @@
   position: absolute;
   right: 0;
 }
-
+/* bounce */
+@keyframes bounceTop {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  0% {
+    transform: translateY(0);
+  }
+}
 /********* responsive design *********/
 
 @media (min-width: 2000px) {

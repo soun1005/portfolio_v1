@@ -6,11 +6,13 @@ import {
   Variants,
   Transition,
   AnimationControls,
+  easeInOut,
 } from 'framer-motion';
 
 interface Props {
   children: JSX.Element;
   width?: 'fit-content' | '100%';
+  position?: 'absolute' | 'relative';
   customAnimation?: {
     variants: Variants;
     initial: string;
@@ -19,9 +21,14 @@ interface Props {
   };
 }
 
-export const Appearance = ({ children, customAnimation, width }: Props) => {
+export const Appearance = ({
+  children,
+  customAnimation,
+  width,
+  position,
+}: Props) => {
   const ref = useRef(null);
-  // element should be 0.4percent shown to have animation
+  // element should be 50 percent shown to have animation
   const isInView = useInView(ref, { amount: 0.5 });
 
   const controls = useAnimation();
@@ -41,18 +48,23 @@ export const Appearance = ({ children, customAnimation, width }: Props) => {
 
   const defaultAnimation: Props['customAnimation'] = {
     variants: {
-      hidden: { opacity: 0, x: -40 },
-      visible: { opacity: 1, x: 0 },
+      hidden: { opacity: 0, y: 90 },
+      visible: { opacity: 1, y: 0 },
     },
     initial: 'hidden',
     animate: { controls },
-    transition: { duration: 0.5, delay: 2 },
+    transition: {
+      duration: 0.5,
+      delay: 0.3,
+      type: 'string',
+      ease: easeInOut,
+    },
   };
 
   const animationProps = customAnimation || defaultAnimation;
 
   return (
-    <div ref={ref} style={{ width, overflow: 'hidden', position: 'relative' }}>
+    <div ref={ref} style={{ width, overflow: 'hidden', position }}>
       <motion.div
         variants={animationProps.variants}
         initial={animationProps.initial}

@@ -7,7 +7,7 @@ import arrowWhite from '@/assets/mainPage/arrow_white.png';
 import { useAppContext } from '@/pages/context/AppContext';
 import { AnimatedText } from '@/components/framer-motion-utils/AnimatedText';
 import { Appearance } from '@/components/framer-motion-utils/Appearance';
-import { motion } from 'framer-motion';
+import { Variants, easeInOut, motion } from 'framer-motion';
 
 const Main = () => {
   const { isLightMode } = useAppContext();
@@ -28,11 +28,12 @@ const Main = () => {
             <Appearance
               customAnimation={{
                 variants: {
-                  hidden: { opacity: 0, x: -50 },
+                  hidden: { opacity: 0, x: -100 },
                   visible: { opacity: 1, x: 0 },
                 },
                 initial: 'hidden',
-                transition: { duration: 0.5 },
+
+                transition: { duration: 0.3, delay: 1.5, ease: easeInOut },
               }}
             >
               <p className={`${styles.paragraph} ${styles.reactP} `}>
@@ -66,7 +67,7 @@ const Main = () => {
                   visible: { opacity: 1, x: 0 },
                 },
                 initial: 'hidden',
-                transition: { duration: 0.5 },
+                transition: { duration: 0.4, delay: 0.5, ease: easeInOut },
               }}
             >
               <div className={styles.nameWrap}>

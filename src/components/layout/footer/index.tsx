@@ -1,3 +1,4 @@
+import { easeInOut } from 'framer-motion';
 import styles from './footer.module.css';
 import { Appearance } from '@/components/framer-motion-utils/Appearance';
 
@@ -11,7 +12,7 @@ const Footer = () => {
             visible: { opacity: 1, x: 0 },
           },
           initial: 'hidden',
-          transition: { duration: 0.5 },
+          transition: { duration: 0.5, delay: 0.5, ease: easeInOut },
         }}
       >
         <div className={styles.logoWrap}>
@@ -24,11 +25,11 @@ const Footer = () => {
         width="fit-content"
         customAnimation={{
           variants: {
-            hidden: { opacity: 0, y: -100 },
+            hidden: { opacity: 0, y: 100 },
             visible: { opacity: 1, y: 0 },
           },
           initial: 'hidden',
-          transition: { duration: 0.5 },
+          transition: { duration: 0.4, delay: 0.5, ease: easeInOut },
         }}
       >
         <ul className={styles.linkWrap}>

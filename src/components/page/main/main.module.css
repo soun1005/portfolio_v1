@@ -52,11 +52,6 @@
   align-items: center;
 }
 
-.imgContainer {
-  width: 23%;
-  height: 100%;
-}
-
 /************* texts *************/
 .heroText {
   font-size: var(--fs-title);

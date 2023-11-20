@@ -1,6 +1,6 @@
-import { easeInOut } from 'framer-motion';
 import styles from './footer.module.css';
 import { Appearance } from '@/components/framer-motion-utils/Appearance';
+import CopyEmail from '@/components/utils/CopyEmail';
 
 const Footer = () => {
   return (
@@ -12,7 +12,7 @@ const Footer = () => {
             visible: { opacity: 1, x: 0 },
           },
           initial: 'hidden',
-          transition: { duration: 0.5, delay: 0.5, ease: easeInOut },
+          transition: { duration: 1, delay: 0.3 },
         }}
       >
         <div className={styles.logoWrap}>
@@ -29,7 +29,11 @@ const Footer = () => {
             visible: { opacity: 1, y: 0 },
           },
           initial: 'hidden',
-          transition: { duration: 0.4, delay: 0.5, ease: easeInOut },
+          transition: {
+            duration: 1,
+            delay: 0.3,
+            ease: [0.25, 0.25, 0.25, 0.75],
+          },
         }}
       >
         <ul className={styles.linkWrap}>
@@ -52,7 +56,9 @@ const Footer = () => {
             </a>
           </li>
           <li>
-            <a href="mailto: thdms1005@gmail.com">Contact</a>
+            <p className="copyEmail" onClick={CopyEmail}>
+              E-Mail
+            </p>
           </li>
         </ul>
       </Appearance>

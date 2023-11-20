@@ -63,9 +63,9 @@ a {
 }
 
 button {
-  background-color: transparent;
+  /* background-color: transparent; */
   border: none;
-  color: white;
+  /* color: white; */
 }
 
 footer {

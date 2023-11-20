@@ -6,7 +6,6 @@ import {
   Variants,
   Transition,
   AnimationControls,
-  easeInOut,
 } from 'framer-motion';
 
 interface Props {
@@ -54,10 +53,10 @@ export const Appearance = ({
     initial: 'hidden',
     animate: { controls },
     transition: {
-      duration: 0.5,
+      duration: 1.2,
       delay: 0.3,
-      type: 'string',
-      ease: easeInOut,
+      type: 'tween',
+      ease: [0.25, 0.25, 0.25, 0.75],
     },
   };
 

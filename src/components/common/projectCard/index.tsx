@@ -38,9 +38,9 @@ const ProjectCard = ({ data }: ProjectCardProps) => {
           },
           initial: 'hidden',
           transition: {
-            duration: 0.4,
-            delay: 0.5,
-            ease: easeInOut,
+            duration: 1,
+            delay: 0.3,
+            ease: [0.25, 0.25, 0.25, 0.75],
           },
         }}
       >

@@ -18,7 +18,11 @@ const About = () => {
               visible: { opacity: 1, x: 0 },
             },
             initial: 'hidden',
-            transition: { duration: 0.4, delay: 0.5, ease: easeInOut },
+            transition: {
+              duration: 1,
+              delay: 0.3,
+              ease: [0.25, 0.25, 0.25, 0.75],
+            },
           }}
         >
           <div className={styles.descWrap}>
@@ -44,7 +48,11 @@ const About = () => {
               visible: { opacity: 1, x: 0 },
             },
             initial: 'hidden',
-            transition: { duration: 0.4, delay: 0.5, ease: easeInOut },
+            transition: {
+              duration: 1,
+              delay: 0.3,
+              ease: [0.25, 0.25, 0.25, 0.75],
+            },
           }}
         >
           <div className={styles.photoWrap}>
@@ -60,7 +68,11 @@ const About = () => {
             visible: { opacity: 1, y: 0 },
           },
           initial: 'hidden',
-          transition: { duration: 0.4, delay: 0.5, ease: easeInOut },
+          transition: {
+            duration: 1.2,
+            delay: 0.3,
+            ease: [0.25, 0.25, 0.25, 0.75],
+          },
         }}
       >
         <Button

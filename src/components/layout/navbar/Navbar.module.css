@@ -39,6 +39,11 @@
   justify-content: flex-end;
 }
 
+.copyEmail {
+  cursor: pointer;
+  color: var(--color-text);
+}
+
 .iconContainer {
   height: 100%;
   display: flex;

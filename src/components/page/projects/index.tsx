@@ -11,8 +11,8 @@ import down_gray from '@/assets/down_gray.png';
 import { useAppContext } from '@/pages/context/AppContext';
 
 const Projects = () => {
-  const [personal, setPersonal] = useState(false);
-  const [school, setSchool] = useState(false);
+  const [personal, setPersonal] = useState(true);
+  const [school, setSchool] = useState(true);
 
   const { isLightMode } = useAppContext();
 

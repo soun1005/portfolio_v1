@@ -1,16 +1,42 @@
 import styles from './Navbar.module.css';
 import { Link } from 'react-scroll/modules';
-import { useState } from 'react';
+import { useRef, useState, useEffect, ReactEventHandler } from 'react';
 import { useAppContext } from '@/pages/context/AppContext';
 import CopyEmail from '@/components/utils/CopyEmail';
 
 const Navbar = () => {
+  // Define a custom type for the ref
+  type DivRef = React.MutableRefObject<HTMLDivElement | null>;
   const [nav, openNav] = useState(false);
   const { isLightMode, toggleMode } = useAppContext();
+  const navHiddenMenu: DivRef = useRef(null);
 
   const handleToggle = () => {
     toggleMode();
   };
+
+  // mobile nav bar closing function
+  useEffect(() => {
+    // Responsive nav menu innerText
+    const menus = ['PROJECTS', 'SKILLS', 'ABOUT', 'LINKS', 'EMAIL', '🌝', '🌚'];
+
+    const checkIfClickedOutside = (e: any) => {
+      if (
+        nav &&
+        navHiddenMenu.current &&
+        !navHiddenMenu.current.contains(e.target as Node) &&
+        e.target.className !== 'openIcon' &&
+        !menus.includes(e.target.innerText)
+      ) {
+        openNav(false);
+      }
+    };
+    document.addEventListener('mousedown', checkIfClickedOutside);
+    return () => {
+      // clean eventListener
+      document.removeEventListener('mousedown', checkIfClickedOutside);
+    };
+  }, [nav]);
 
   return (
     <>
@@ -23,7 +49,10 @@ const Navbar = () => {
             openNav(!nav);
           }}
         >
-          <div className={nav ? styles.sideNav : styles.open}></div>
+          <div
+            className={nav ? styles.sideNav : styles.open}
+            ref={nav ? navHiddenMenu : null}
+          ></div>
         </div>
         <div className={nav ? styles.responsiveNav : styles.desktopNav}>
           <ul className={styles.nav}>
@@ -35,6 +64,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={0}
                 duration={300}
+                onClick={() => openNav(false)}
               >
                 SKILLS
               </Link>
@@ -47,6 +77,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={0}
                 duration={300}
+                onClick={() => openNav(false)}
               >
                 PROJECTS
               </Link>
@@ -59,6 +90,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={0}
                 duration={300}
+                onClick={() => openNav(false)}
               >
                 ABOUT
               </Link>
@@ -71,6 +103,7 @@ const Navbar = () => {
                 smooth={true}
                 offset={0}
                 duration={300}
+                onClick={() => openNav(false)}
               >
                 LINKS
               </Link>

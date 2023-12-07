@@ -37,17 +37,17 @@ const Footer = () => {
         }}
       >
         <ul className={styles.linkWrap}>
-          <li>
+          <li className={styles.list}>
             <a href="https://www.linkedin.com/in/soeunl/" target="_blank">
               LinkedIn
             </a>
           </li>
-          <li>
+          <li className={styles.list}>
             <a href="https://github.com/soun1005" target="_blank">
               Github
             </a>
           </li>
-          <li>
+          <li className={styles.list}>
             <a
               href="https://drive.google.com/file/d/1Uw9usQpzok3TU_ulSM_-9ovpjjAm_suI/view?usp=sharing"
               target="_blank"
@@ -55,7 +55,7 @@ const Footer = () => {
               View CV(EN/FR)
             </a>
           </li>
-          <li>
+          <li className={styles.list}>
             <p className="copyEmail" onClick={CopyEmail}>
               E-Mail
             </p>

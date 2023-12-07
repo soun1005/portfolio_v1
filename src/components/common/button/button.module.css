@@ -9,6 +9,13 @@
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition: 0.3s;
+}
+
+.container:hover {
+  background-color: var(--bgcolor-sub);
+  border: 1px var(--color-text) solid;
+  transition: 0.3s;
 }
 
 .container a {
@@ -17,6 +24,10 @@
   font-weight: 600;
   color: white;
   cursor: pointer;
+}
+
+.container:hover a {
+  color: var(--color-text);
 }
 
 @media (max-width: 1000px) {

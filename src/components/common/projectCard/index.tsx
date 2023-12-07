@@ -3,7 +3,6 @@ import Button from '@/components/common/button';
 import Image from 'next/image';
 import Tag from '../projectTag';
 import { Appearance } from '@/components/framer-motion-utils/Appearance';
-import { easeInOut } from 'framer-motion';
 
 type Project = {
   id: number;

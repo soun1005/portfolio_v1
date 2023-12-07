@@ -20,6 +20,10 @@
   letter-spacing: var(--logo-spacing);
 }
 
+.list {
+  cursor: pointer;
+}
+
 .title {
   font-size: var(--fs-2);
 }

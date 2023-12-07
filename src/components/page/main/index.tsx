@@ -7,7 +7,7 @@ import arrowWhite from '@/assets/mainPage/arrow_white.png';
 import { useAppContext } from '@/pages/context/AppContext';
 import { AnimatedText } from '@/components/framer-motion-utils/AnimatedText';
 import { Appearance } from '@/components/framer-motion-utils/Appearance';
-import { Variants, easeInOut, motion } from 'framer-motion';
+import { easeInOut } from 'framer-motion';
 
 const Main = () => {
   const { isLightMode } = useAppContext();
@@ -68,8 +68,8 @@ const Main = () => {
                 },
                 initial: 'hidden',
                 transition: {
-                  duration: 1,
-                  delay: 0.3,
+                  duration: 0.3,
+                  delay: 2,
                   ease: [0.25, 0.25, 0.25, 0.75],
                 },
               }}

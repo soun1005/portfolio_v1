@@ -53,8 +53,8 @@ export const Appearance = ({
     initial: 'hidden',
     animate: { controls },
     transition: {
-      duration: 1.2,
-      delay: 0.3,
+      duration: 0.7,
+      delay: 0.2,
       type: 'tween',
       ease: [0.25, 0.25, 0.25, 0.75],
     },

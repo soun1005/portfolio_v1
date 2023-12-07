@@ -19,8 +19,8 @@ const About = () => {
             },
             initial: 'hidden',
             transition: {
-              duration: 1,
-              delay: 0.3,
+              duration: 0.8,
+              delay: 0.2,
               ease: [0.25, 0.25, 0.25, 0.75],
             },
           }}
@@ -49,8 +49,8 @@ const About = () => {
             },
             initial: 'hidden',
             transition: {
-              duration: 1,
-              delay: 0.3,
+              duration: 0.8,
+              delay: 0.2,
               ease: [0.25, 0.25, 0.25, 0.75],
             },
           }}
@@ -69,8 +69,8 @@ const About = () => {
           },
           initial: 'hidden',
           transition: {
-            duration: 1.2,
-            delay: 0.3,
+            duration: 0.8,
+            delay: 0.2,
             ease: [0.25, 0.25, 0.25, 0.75],
           },
         }}

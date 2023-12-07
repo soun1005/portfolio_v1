@@ -27,7 +27,7 @@ const Navbar = () => {
         </div>
         <div className={nav ? styles.responsiveNav : styles.desktopNav}>
           <ul className={styles.nav}>
-            <li>
+            <li className={styles.list}>
               <Link
                 activeClass="active"
                 to="skills"
@@ -39,7 +39,7 @@ const Navbar = () => {
                 SKILLS
               </Link>
             </li>
-            <li>
+            <li className={styles.list}>
               <Link
                 activeClass="active"
                 to="projects"
@@ -51,7 +51,7 @@ const Navbar = () => {
                 PROJECTS
               </Link>
             </li>
-            <li>
+            <li className={styles.list}>
               <Link
                 activeClass="active"
                 to="about"
@@ -63,7 +63,7 @@ const Navbar = () => {
                 ABOUT
               </Link>
             </li>
-            <li>
+            <li className={styles.list}>
               <Link
                 activeClass="active"
                 to="footer"
@@ -75,12 +75,15 @@ const Navbar = () => {
                 LINKS
               </Link>
             </li>
-            <li>
+            <li className={styles.list}>
               <p className="copyEmail" onClick={CopyEmail}>
                 EMAIL
               </p>
             </li>
-            <li className={styles.iconContainer} onClick={handleToggle}>
+            <li
+              className={`${styles.iconContainer} ${styles.list}`}
+              onClick={handleToggle}
+            >
               {isLightMode ? (
                 <span className={styles.icon}>🌚</span>
               ) : (

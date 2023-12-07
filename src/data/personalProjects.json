@@ -11,7 +11,7 @@
   {
     "id": 3,
     "title": "Cinelog *in contruction*",
-    "description": "Fullstack made with MERN stack. Login/signup, ",
+    "description": "Movie reviewing website. Fully functioning CRUD operations on review and favourite",
     "tags": [
       "MERNstack",
       "Fullstack",

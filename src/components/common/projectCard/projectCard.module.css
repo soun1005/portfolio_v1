@@ -77,17 +77,14 @@
 
 @media (max-width: 567px) {
   .cardContainer {
+    grid-template-columns: none;
     flex-direction: column;
     width: 100%;
-    /* background-color: red; */
   }
   .cardWrap {
     width: 100%;
   }
 
-  .descWrap {
-    height: fit-content;
-  }
   .tagWrap {
     gap: 0;
   }

@@ -16,6 +16,8 @@ const Projects = () => {
 
   const { isLightMode } = useAppContext();
 
+  const ocProjects = data.reverse();
+
   const controlDropdown = (e: React.MouseEvent) => {
     const target = e.target as HTMLElement;
     const value = target;
@@ -121,7 +123,7 @@ const Projects = () => {
       </h1>
       {school ? (
         <div className={styles.cardContainer}>
-          <ProjectCard data={data} />
+          <ProjectCard data={ocProjects} />
         </div>
       ) : (
         ''

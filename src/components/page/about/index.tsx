@@ -28,7 +28,9 @@ const About = () => {
           <div className={styles.descWrap}>
             <h2>Hello! I&apos;m Soeun,</h2>
             <p className={styles.title}>frontend developer</p>
-            <p className={styles.title}>from S.Korea based in Paris, France</p>
+            <p className={styles.title}>
+              from S.Korea based in Parisien region, France
+            </p>
             <p className={styles.desc}>
               I studied International Trade at university in Korea and worked as
               a project manager at a marketing company in Seoul for a little

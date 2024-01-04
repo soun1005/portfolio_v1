@@ -67,9 +67,9 @@
 }
 
 @media (max-width: 1000px) {
-  .cardWrap {
+  /* .cardWrap {
     width: 48%;
-  }
+  } */
   .tagWrap {
     margin-top: 1rem;
   }

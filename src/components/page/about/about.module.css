@@ -60,6 +60,7 @@
 @media (max-width: 1000px) {
   .container {
     padding-bottom: 3rem;
+    height: fit-content;
   }
   .mainWrap {
     height: fit-content;
@@ -71,7 +72,7 @@
     font-size: 5vw;
   }
   .photoWrap {
-    width: 20%;
+    /* width: 20%; */
     height: min-content;
   }
   .descWrap {

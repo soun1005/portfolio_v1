@@ -42,6 +42,11 @@
   transition: 0.5s;
 }
 
+.list a:hover,
+.list p:hover {
+  text-decoration: underline;
+}
+
 .nav {
   display: flex;
   gap: 3%;

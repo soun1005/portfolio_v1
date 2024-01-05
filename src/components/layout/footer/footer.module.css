@@ -20,8 +20,14 @@
   letter-spacing: var(--logo-spacing);
 }
 
-.list {
+.list a,
+.list p {
   cursor: pointer;
+}
+
+.list a:hover,
+.list p:hover {
+  text-decoration: underline;
 }
 
 .title {

@@ -3,7 +3,6 @@ import Button from '@/components/common/button';
 import Image from 'next/image';
 import profile from '@/assets/me.jpeg';
 import { Appearance } from '@/components/framer-motion-utils/Appearance';
-import { easeInOut } from 'framer-motion';
 
 const About = () => {
   return (
@@ -29,17 +28,44 @@ const About = () => {
             <h2>Hello! I&apos;m Soeun,</h2>
             <p className={styles.title}>frontend developer</p>
             <p className={styles.title}>
-              from S.Korea based in Parisien region, France
+              from <span className={styles.textRainbow}>Seoul🇰🇷</span> based in
+              Parisien region, France
             </p>
             <p className={styles.desc}>
-              I studied International Trade at university in Korea and worked as
-              a project manager at a marketing company in Seoul for a little
-              while. After that, I worked for a Korean logistics company in
-              Paris, France for two years. I had a great opportunity to start
-              attending a school where I could learn to be a developer, which is
-              something I&apos;ve always wanted to do. I have always enjoyed
-              learning new things and creating something, and I will never stop
-              learning, just as I always have.
+              My friends tell me that I am positive, persistent, ambitious,
+              funny and kind 😉
+              <br />I enjoy being <u>productive</u> and <u>creative</u>, so I
+              chose the path of a developer. <br />
+              Currently I am self-studying to be a{' '}
+              <span className={styles.textRainbow}>full-stack developer.</span>
+              <br />
+              <br />I like building projects that are not only{' '}
+              <b>
+                <i> stylish</i>
+              </b>
+              ,
+              <b>
+                <i> pixel-perfect</i>
+              </b>
+              ,
+              <b>
+                <i> cutting-edge</i>
+              </b>
+              ,
+              <b>
+                <i> user-friendly </i>
+              </b>
+              <br />
+              but also written in{' '}
+              <b>
+                <i>clean</i>
+              </b>{' '}
+              and{' '}
+              <b>
+                <i>straightforward</i>
+              </b>{' '}
+              code, making it easier for developers to maintain. <br />
+              Because after all, we must always strive for <b>progress</b> 😎
             </p>
           </div>
         </Appearance>

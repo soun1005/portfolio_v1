@@ -49,7 +49,7 @@ const Footer = () => {
           </li>
           <li className={styles.list}>
             <a
-              href="https://drive.google.com/file/d/1Uw9usQpzok3TU_ulSM_-9ovpjjAm_suI/view?usp=sharing"
+              href="https://drive.google.com/file/d/1Unh7TLeaLzFKbe7ftvYZB8FASqahghJm/view?usp=sharing"
               target="_blank"
             >
               View CV(EN/FR)

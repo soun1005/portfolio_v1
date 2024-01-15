@@ -105,7 +105,7 @@ const About = () => {
       >
         <Button
           text="VIEW CV(EN/FR)"
-          link="https://drive.google.com/file/d/1Uw9usQpzok3TU_ulSM_-9ovpjjAm_suI/view?usp=sharing"
+          link="https://drive.google.com/file/d/1Unh7TLeaLzFKbe7ftvYZB8FASqahghJm/view?usp=sharing"
         />
       </Appearance>
     </div>

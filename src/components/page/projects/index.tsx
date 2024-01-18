@@ -17,6 +17,8 @@ const Projects = () => {
   const { isLightMode } = useAppContext();
 
   const ocProjects = data.reverse();
+  // sort projects by id
+  const personalProjects = personalProjectData.sort((a, b) => a.id - b.id);
 
   const controlDropdown = (e: React.MouseEvent) => {
     const target = e.target as HTMLElement;
@@ -81,7 +83,7 @@ const Projects = () => {
 
       {personal ? (
         <div className={styles.cardContainer}>
-          <ProjectCard data={personalProjectData} />
+          <ProjectCard data={personalProjects} />
         </div>
       ) : (
         ''

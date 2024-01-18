@@ -12,7 +12,7 @@ import { useAppContext } from '@/pages/context/AppContext';
 
 const Projects = () => {
   const [personal, setPersonal] = useState(true);
-  const [school, setSchool] = useState(true);
+  const [school, setSchool] = useState(false);
 
   const { isLightMode } = useAppContext();
 

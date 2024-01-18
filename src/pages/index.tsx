@@ -29,14 +29,14 @@ export default function Home(): JSX.Element {
           <Main />
           <ArrowUp />
         </main>
+        <article className="aboutWrap">
+          <About />
+        </article>
         <article className="skillsWrap">
           <Skills />
         </article>
         <article className="projectWrap">
           <Projects />
-        </article>
-        <article className="aboutWrap">
-          <About />
         </article>
         <footer className="footer">
           <Footer />

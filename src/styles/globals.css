@@ -63,16 +63,14 @@ a {
 }
 
 button {
-  /* background-color: transparent; */
   border: none;
-  /* color: white; */
 }
 
 footer {
   background-color: var(--bgcolor-main);
 }
 
-.skillsWrap,
+.projectWrap,
 .aboutWrap {
   background-color: var(--bgcolor-sub);
 }
@@ -159,8 +157,7 @@ body {
   object-fit: cover;
 }
 
-.main,
-.projectWrap {
+.main {
   background-color: var(--bgcolor-main);
 }
 /*

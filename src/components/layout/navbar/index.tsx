@@ -18,7 +18,7 @@ const Navbar = () => {
   // mobile nav bar closing function
   useEffect(() => {
     // Responsive nav menu innerText
-    const menus = ['PROJECTS', 'SKILLS', 'ABOUT', 'LINKS', 'EMAIL', '🌝', '🌚'];
+    const menus = ['PROJECTS', 'ABOUT', 'SKILLS', 'LINKS', 'EMAIL', '🌝', '🌚'];
 
     const checkIfClickedOutside = (e: any) => {
       if (
@@ -59,6 +59,19 @@ const Navbar = () => {
             <li className={styles.list}>
               <Link
                 activeClass="active"
+                to="about"
+                spy={true}
+                smooth={true}
+                offset={0}
+                duration={300}
+                onClick={() => openNav(false)}
+              >
+                ABOUT
+              </Link>
+            </li>
+            <li className={styles.list}>
+              <Link
+                activeClass="active"
                 to="skills"
                 spy={true}
                 smooth={true}
@@ -80,19 +93,6 @@ const Navbar = () => {
                 onClick={() => openNav(false)}
               >
                 PROJECTS
-              </Link>
-            </li>
-            <li className={styles.list}>
-              <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={300}
-                onClick={() => openNav(false)}
-              >
-                ABOUT
               </Link>
             </li>
             <li className={styles.list}>

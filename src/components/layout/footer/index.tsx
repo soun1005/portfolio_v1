@@ -49,10 +49,10 @@ const Footer = () => {
           </li>
           <li className={styles.list}>
             <a
-              href="https://drive.google.com/file/d/1Unh7TLeaLzFKbe7ftvYZB8FASqahghJm/view?usp=sharing"
+              href="https://drive.google.com/file/d/14XFWxUkJV-pxUL_oTM4oFRJ8PvRFDnEC/view?usp=sharing"
               target="_blank"
             >
-              View CV(EN/FR)
+              View CV
             </a>
           </li>
           <li className={styles.list}>

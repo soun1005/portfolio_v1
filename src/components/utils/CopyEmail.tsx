@@ -1,4 +1,4 @@
-const email = 'thdms1005@gmail.com';
+const email = 'silvercowlee.dev@gmail.com';
 
 const CopyEmail = () => {
   navigator.clipboard

@@ -1,11 +1,8 @@
 import styles from './skills.module.css';
 import Card from '@/components/common/card';
 import js from '@/assets/skillIcons/js.png';
-// import css from '@/assets/skillIcons/css.png';
 import figma from '@/assets/skillIcons/figma.png';
 import git from '@/assets/skillIcons/git.png';
-// import github from '@/assets/skillIcons/github.png';
-// import html from '@/assets/skillIcons/html.png';
 import jest from '@/assets/skillIcons/jest.png';
 import next from '@/assets/skillIcons/next.png';
 import nextW from '@/assets/skillIcons/nextW.png';
@@ -19,9 +16,9 @@ import nodejs from '@/assets/skillIcons/nodejs.webp';
 import expressjs from '@/assets/skillIcons/expressjs.png';
 import expressjsW from '@/assets/skillIcons/expressjsW.png';
 import mongodb from '@/assets/skillIcons/mongodb.png';
-// import postgre from '@/assets/skillIcons/postgres.png';
 import { useAppContext } from '@/pages/context/AppContext';
 import { Appearance } from '@/components/framer-motion-utils/Appearance';
+import zustand from '@/assets/skillIcons/zustand.png';
 
 const Skills = () => {
   const { isLightMode } = useAppContext();
@@ -44,7 +41,7 @@ const Skills = () => {
             </Appearance>
 
             <Appearance>
-              <Card title="REACT" image={react} />
+              <Card title="REACT/React Native" image={react} />
             </Appearance>
             <Appearance>
               {isLightMode ? (
@@ -55,6 +52,9 @@ const Skills = () => {
             </Appearance>
             <Appearance>
               <Card title="REDUX" image={redux} />
+            </Appearance>
+            <Appearance>
+              <Card title="ZUSTAND" image={zustand} />
             </Appearance>
           </div>
         </div>

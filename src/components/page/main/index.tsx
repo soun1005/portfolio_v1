@@ -37,7 +37,7 @@ const Main = () => {
               }}
             >
               <p className={`${styles.paragraph} ${styles.reactP} `}>
-                - SPECIALISED IN REACT
+                - SPECIALISED IN REACT / TS / REACT NATIVE
               </p>
             </Appearance>
           </div>

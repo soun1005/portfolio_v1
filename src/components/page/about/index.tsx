@@ -32,7 +32,7 @@ const About = () => {
                         </p>
                         <p className={styles.desc}>
                             <span>After completing a one-year intensive bootcamp to become a JavaScript developer, I now specialize in React, TypeScript, and React Native.</span>
-                            <span> I enjoy working proactively and tackling creative challenges. Also I like learning new technologies and applying them in practical ways. I believe that every task has its order, so I organize my work using Kanban, prioritizing efficiently to get things done faster. </span>
+                            <span> I enjoy working proactively and tackling creative challenges. Also I like learning new technologies and applying them in practical ways. I believe that every task has its order, so I organize my work using Kanban, prioritizing efficiently to get things done efficiently. </span>
                             
              
                         </p>

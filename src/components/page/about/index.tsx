@@ -74,7 +74,7 @@ const About = () => {
             >
                 <Button
                     text="VIEW CV"
-                    link="https://drive.google.com/file/d/1ruxH4t6ZkbC6Ns5ruueSdEEOZSsLQFK9/view?usp=drive_link"
+                    link="https://drive.google.com/file/d/1BFUp87RryFzhn9PUFqcC90nZhA38E_jG/view?usp=sharing"
                 />
             </Appearance>
         </div>

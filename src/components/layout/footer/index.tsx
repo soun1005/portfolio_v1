@@ -50,7 +50,7 @@ const Footer = () => {
                     </li>
                     <li className={styles.list}>
                         <a
-                            href="https://drive.google.com/file/d/1ruxH4t6ZkbC6Ns5ruueSdEEOZSsLQFK9/view?usp=drive_link"
+                            href="https://drive.google.com/file/d/1BFUp87RryFzhn9PUFqcC90nZhA38E_jG/view?usp=sharing"
                             target="_blank"
                         >
                             View CV

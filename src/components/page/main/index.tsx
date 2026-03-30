@@ -76,10 +76,10 @@ const Main = () => {
             >
               <div className={styles.nameWrap}>
                 <span className={styles.nameFirstRow}>
-                  <span>SOEUN</span>
+                  <span>ELODIE</span>
                 </span>
                 <span className={styles.nameSecondRow}>
-                  <span>LEE</span>
+                  <span>LE GALL</span>
                 </span>
               </div>
             </Appearance>

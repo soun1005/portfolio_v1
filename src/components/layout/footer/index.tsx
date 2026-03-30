@@ -16,7 +16,7 @@ const Footer = () => {
                 }}
             >
                 <div className={styles.logoWrap}>
-                    <h1 className={styles.logo}>SOEUN LEE.</h1>
+                    <h1 className={styles.logo}>ELODIE LE GALL.</h1>
                     <span className={styles.title}>Frontend developer.</span>
                     
                     <span onClick={CopyEmail} style={{ cursor: 'pointer' }} className={styles.email}>silvercowlee.dev@gmail.com</span>
@@ -50,7 +50,7 @@ const Footer = () => {
                     </li>
                     <li className={styles.list}>
                         <a
-                            href="https://drive.google.com/file/d/1BFUp87RryFzhn9PUFqcC90nZhA38E_jG/view?usp=sharing"
+                            href="https://drive.google.com/file/d/1D1UBNkxc8QTyNpGZjHsCCepBtIDqs5HM/view?usp=sharing"
                             target="_blank"
                         >
                             View CV

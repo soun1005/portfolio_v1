@@ -41,7 +41,7 @@ const Navbar = () => {
   return (
     <>
       <nav className={styles.container}>
-        <div className={styles.logo}>SOEUN LEE</div>
+        <div className={styles.logo}>ELODIE LE GALL</div>
         {/* responsive nav */}
         <div
           className={styles.openIcon}

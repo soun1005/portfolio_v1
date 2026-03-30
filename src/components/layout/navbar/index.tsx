@@ -1,24 +1,25 @@
 import styles from './Navbar.module.css';
 import { Link } from 'react-scroll/modules';
-import { useRef, useState, useEffect, ReactEventHandler } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { useAppContext } from '@/pages/context/AppContext';
 import CopyEmail from '@/components/utils/CopyEmail';
+import { translations } from '@/locales/translations';
 
 const Navbar = () => {
-  // Define a custom type for the ref
   type DivRef = React.MutableRefObject<HTMLDivElement | null>;
   const [nav, openNav] = useState(false);
-  const { isLightMode, toggleMode } = useAppContext();
+  const { isLightMode, toggleMode, lang, toggleLang } = useAppContext();
   const navHiddenMenu: DivRef = useRef(null);
+  const T = translations.nav;
 
-  const handleToggle = () => {
-    toggleMode();
-  };
+  const handleToggle = () => toggleMode();
 
-  // mobile nav bar closing function
   useEffect(() => {
-    // Responsive nav menu innerText
-    const menus = ['PROJECTS', 'ABOUT', 'SKILLS', 'LINKS', 'EMAIL', '🌝', '🌚'];
+    const menus = [
+      'ABOUT', 'SKILLS', 'PROJECTS', 'LINKS', 'EMAIL',
+      'À PROPOS', 'COMPÉTENCES', 'PROJETS', 'LIENS', 'E-MAIL',
+      'EN', 'FR', '🌝', '🌚',
+    ];
 
     const checkIfClickedOutside = (e: any) => {
       if (
@@ -32,23 +33,14 @@ const Navbar = () => {
       }
     };
     document.addEventListener('mousedown', checkIfClickedOutside);
-    return () => {
-      // clean eventListener
-      document.removeEventListener('mousedown', checkIfClickedOutside);
-    };
+    return () => document.removeEventListener('mousedown', checkIfClickedOutside);
   }, [nav]);
 
   return (
     <>
       <nav className={styles.container}>
         <div className={styles.logo}>ELODIE LE GALL</div>
-        {/* responsive nav */}
-        <div
-          className={styles.openIcon}
-          onClick={() => {
-            openNav(!nav);
-          }}
-        >
+        <div className={styles.openIcon} onClick={() => openNav(!nav)}>
           <div
             className={nav ? styles.sideNav : styles.open}
             ref={nav ? navHiddenMenu : null}
@@ -57,66 +49,34 @@ const Navbar = () => {
         <div className={nav ? styles.responsiveNav : styles.desktopNav}>
           <ul className={styles.nav}>
             <li className={styles.list}>
-              <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={300}
-                onClick={() => openNav(false)}
-              >
-                ABOUT
+              <Link activeClass="active" to="about" spy smooth offset={0} duration={300} onClick={() => openNav(false)}>
+                {T.about[lang]}
               </Link>
             </li>
             <li className={styles.list}>
-              <Link
-                activeClass="active"
-                to="skills"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={300}
-                onClick={() => openNav(false)}
-              >
-                SKILLS
+              <Link activeClass="active" to="skills" spy smooth offset={0} duration={300} onClick={() => openNav(false)}>
+                {T.skills[lang]}
               </Link>
             </li>
             <li className={styles.list}>
-              <Link
-                activeClass="active"
-                to="projects"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={300}
-                onClick={() => openNav(false)}
-              >
-                PROJECTS
+              <Link activeClass="active" to="projects" spy smooth offset={0} duration={300} onClick={() => openNav(false)}>
+                {T.projects[lang]}
               </Link>
             </li>
             <li className={styles.list}>
-              <Link
-                activeClass="active"
-                to="footer"
-                spy={true}
-                smooth={true}
-                offset={0}
-                duration={300}
-                onClick={() => openNav(false)}
-              >
-                LINKS
+              <Link activeClass="active" to="footer" spy smooth offset={0} duration={300} onClick={() => openNav(false)}>
+                {T.links[lang]}
               </Link>
             </li>
             <li className={styles.list}>
               <p className="copyEmail" onClick={CopyEmail}>
-                EMAIL
+                {T.email[lang]}
               </p>
             </li>
-            <li
-              className={`${styles.iconContainer} ${styles.list}`}
-              onClick={handleToggle}
-            >
+            <li className={`${styles.langToggle} ${styles.list}`} onClick={toggleLang}>
+              {lang === 'en' ? 'FR' : 'EN'}
+            </li>
+            <li className={`${styles.iconContainer} ${styles.list}`} onClick={handleToggle}>
               {isLightMode ? (
                 <span className={styles.icon}>🌚</span>
               ) : (

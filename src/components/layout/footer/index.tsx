@@ -1,8 +1,13 @@
 import styles from './footer.module.css';
 import { Appearance } from '@/components/framer-motion-utils/Appearance';
 import CopyEmail from '@/components/utils/CopyEmail';
+import { useAppContext } from '@/pages/context/AppContext';
+import { translations } from '@/locales/translations';
 
 const Footer = () => {
+    const { lang } = useAppContext();
+    const T = translations.footer;
+
     return (
         <div className={`container ${styles.container}`} id="footer">
             <Appearance
@@ -11,15 +16,16 @@ const Footer = () => {
                         hidden: { opacity: 0, x: -100 },
                         visible: { opacity: 1, x: 0 },
                     },
-          initial: 'hidden',
+                    initial: 'hidden',
                     transition: { duration: 1, delay: 0.3 },
                 }}
             >
                 <div className={styles.logoWrap}>
                     <h1 className={styles.logo}>ELODIE LE GALL.</h1>
-                    <span className={styles.title}>Frontend developer.</span>
-                    
-                    <span onClick={CopyEmail} style={{ cursor: 'pointer' }} className={styles.email}>silvercowlee.dev@gmail.com</span>
+                    <span className={styles.title}>{T.role[lang]}</span>
+                    <span onClick={CopyEmail} style={{ cursor: 'pointer' }} className={styles.email}>
+                        silvercowlee.dev@gmail.com
+                    </span>
                 </div>
             </Appearance>
             <Appearance
@@ -29,7 +35,7 @@ const Footer = () => {
                         hidden: { opacity: 0, y: 100 },
                         visible: { opacity: 1, y: 0 },
                     },
-          initial: 'hidden',
+                    initial: 'hidden',
                     transition: {
                         duration: 1,
                         delay: 0.3,
@@ -39,7 +45,7 @@ const Footer = () => {
             >
                 <ul className={styles.linkWrap}>
                     <li className={styles.list}>
-            <a href="https://www.linkedin.com/in/soeunl/" target="_blank">
+                        <a href="https://www.linkedin.com/in/soeunl/" target="_blank">
                             LinkedIn
                         </a>
                     </li>
@@ -49,16 +55,13 @@ const Footer = () => {
                         </a>
                     </li>
                     <li className={styles.list}>
-                        <a
-                            href="https://drive.google.com/file/d/1D1UBNkxc8QTyNpGZjHsCCepBtIDqs5HM/view?usp=sharing"
-                            target="_blank"
-                        >
-                            View CV
+                        <a href={translations.cvLink[lang]} target="_blank">
+                            {T.viewCv[lang]}
                         </a>
                     </li>
                     <li className={styles.list}>
                         <p className="copyEmail" onClick={CopyEmail}>
-                            E-Mail
+                            {T.email[lang]}
                         </p>
                     </li>
                 </ul>

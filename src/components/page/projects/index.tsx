@@ -9,126 +9,65 @@ import down from '@/assets/down.png';
 import up_gray from '@/assets/up_gray.png';
 import down_gray from '@/assets/down_gray.png';
 import { useAppContext } from '@/pages/context/AppContext';
+import { translations } from '@/locales/translations';
 
 const Projects = () => {
   const [personal, setPersonal] = useState(true);
   const [school, setSchool] = useState(false);
 
-  const { isLightMode } = useAppContext();
+  const { isLightMode, lang } = useAppContext();
+  const T = translations.projects;
 
   const ocProjects = data.reverse();
-  // sort projects by id
   const personalProjects = personalProjectData.sort((a, b) => a.id - b.id);
 
   const controlDropdown = (e: React.MouseEvent) => {
-    const target = e.target as HTMLElement;
-    const value = target;
+    const section = (e.currentTarget as HTMLElement).dataset.section;
+    if (section === 'personal') setPersonal(!personal);
+    if (section === 'school') setSchool(!school);
+  };
 
-    // two constrains for title(h1) and arrow
-    if (
-      value.innerText === 'Personal Projects' ||
-      target.parentElement?.innerText === 'Personal Projects'
-    ) {
-      setPersonal(!personal);
+  const ArrowIcon = ({ open }: { open: boolean }) => {
+    if (isLightMode) {
+      return open
+        ? <Image src={up} alt="arrowUp" className={styles.arrowUp} priority />
+        : <Image src={down} alt="arrowDown" className={styles.arrowDown} priority />;
     }
-
-    if (
-      value.innerText === 'School Projects' ||
-      target.parentElement?.innerText === 'School Projects'
-    ) {
-      setSchool(!school);
-    }
+    return open
+      ? <Image src={up_gray} alt="arrowUp" className={styles.arrowUp} priority />
+      : <Image src={down_gray} alt="arrowDown" className={styles.arrowDown} priority />;
   };
 
   return (
     <div className={`container ${styles.container}`} id="projects">
       <h1
         className={`title ${styles.title} ${styles.personalProjectDropdown}`}
+        data-section="personal"
         onClick={controlDropdown}
       >
-        Personal Projects
-        {isLightMode ? (
-          personal ? (
-            <Image
-              src={up}
-              alt="arrowUp"
-              className={styles.arrowUp}
-              priority={true}
-              onClick={controlDropdown}
-            />
-          ) : (
-            <Image
-              src={down}
-              alt="arrowDown"
-              className={styles.arrowDown}
-              priority={true}
-            />
-          )
-        ) : personal ? (
-          <Image
-            src={up_gray}
-            alt="arrowUp"
-            className={styles.arrowUp}
-            priority={true}
-          />
-        ) : (
-          <Image
-            src={down_gray}
-            alt="arrowDown"
-            className={styles.arrowDown}
-            priority={true}
-          />
-        )}
+        {T.personal[lang]}
+        <ArrowIcon open={personal} />
       </h1>
 
-      {personal ? (
+      {personal && (
         <div className={styles.cardContainer}>
           <ProjectCard data={personalProjects} />
         </div>
-      ) : (
-        ''
       )}
 
-      <h1 className={`title ${styles.title}`} onClick={controlDropdown}>
-        School Projects
-        {isLightMode ? (
-          school ? (
-            <Image
-              src={up}
-              alt="arrowUp"
-              className={styles.arrowUp}
-              priority={true}
-            />
-          ) : (
-            <Image
-              src={down}
-              alt="arrowDown"
-              className={styles.arrowDown}
-              priority={true}
-            />
-          )
-        ) : school ? (
-          <Image
-            src={up_gray}
-            alt="arrowUp"
-            className={styles.arrowUp}
-            priority={true}
-          />
-        ) : (
-          <Image
-            src={down_gray}
-            alt="arrowDown"
-            className={styles.arrowDown}
-            priority={true}
-          />
-        )}
+      <h1
+        className={`title ${styles.title}`}
+        data-section="school"
+        onClick={controlDropdown}
+      >
+        {T.school[lang]}
+        <ArrowIcon open={school} />
       </h1>
-      {school ? (
+
+      {school && (
         <div className={styles.cardContainer}>
           <ProjectCard data={ocProjects} />
         </div>
-      ) : (
-        ''
       )}
     </div>
   );

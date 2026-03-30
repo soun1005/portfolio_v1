@@ -1,31 +1,19 @@
 import styles from './about.module.css';
 import Button from '@/components/common/button';
 import { Appearance } from '@/components/framer-motion-utils/Appearance';
-
-const experiences = [
-  {
-    role: 'Frontend Dev · Lead Mobile Dev',
-    company: 'VIV3 — Paris, France',
-    period: 'Apr 2024 – Nov 2025',
-  },
-  {
-    role: 'Frontend Developer Intern',
-    company: 'Educentre — Paris, France',
-    period: 'Oct 2023 – Mar 2024',
-  },
-  {
-    role: 'Project Manager',
-    company: 'Vryus — Seoul, South Korea',
-    period: 'Aug 2015 – Aug 2016',
-  },
-];
+import { useAppContext } from '@/pages/context/AppContext';
+import { translations } from '@/locales/translations';
 
 const About = () => {
+    const { lang } = useAppContext();
+    const T = translations.about;
+    const experiences = T.experiences[lang];
+
     return (
         <div className={`container ${styles.container}`} id="about">
             <div className={styles.mainWrap}>
                 <div className={styles.bioCol}>
-                    <h1 className="title">About</h1>
+                    <h1 className="title">{T.title[lang]}</h1>
                     <Appearance
                         customAnimation={{
                             variants: {
@@ -41,13 +29,12 @@ const About = () => {
                         }}
                     >
                         <div className={styles.descWrap}>
-                            <h2>Hello! I&apos;m Elodie,</h2>
+                            <h2>{T.greeting[lang]}</h2>
                             <p className={styles.title}>
-                                from <span className={styles.textRainbow}>Seoul🇰🇷</span> based in
-                                Parisien region, France
+                                {T.from[lang]} <span className={styles.textRainbow}>Seoul🇰🇷</span> {T.location[lang]}
                             </p>
                             <p className={styles.desc}>
-                                <span>Frontend developer with 2+ years of professional experience building cross-platform mobile applications and web interfaces using React Native, React.js, and TypeScript. Proven ability to lead end-to-end mobile projects from planning to App Store / Play Store deployment. Multilingual communicator (Korean native · English C2 · French B2 · Japanese) with a track record of delivering production-ready features in agile, fast-paced environments.</span>
+                                <span>{T.bio[lang]}</span>
                             </p>
                         </div>
                     </Appearance>
@@ -68,7 +55,7 @@ const About = () => {
                         }}
                     >
                         <div className={styles.expWrap}>
-                            <h1 className="title">Experience</h1>
+                            <h1 className="title">{T.experienceTitle[lang]}</h1>
                             {experiences.map((exp, i) => (
                                 <div key={i} className={styles.expItem}>
                                     <div className={styles.expMeta}>
@@ -89,7 +76,7 @@ const About = () => {
                         hidden: { opacity: 0, y: -80 },
                         visible: { opacity: 1, y: 0 },
                     },
-          initial: 'hidden',
+                    initial: 'hidden',
                     transition: {
                         duration: 0.8,
                         delay: 0.2,
@@ -98,8 +85,8 @@ const About = () => {
                 }}
             >
                 <Button
-                    text="VIEW CV"
-                    link="https://drive.google.com/file/d/1D1UBNkxc8QTyNpGZjHsCCepBtIDqs5HM/view?usp=sharing"
+                    text={T.viewCv[lang]}
+                    link={translations.cvLink[lang]}
                 />
             </Appearance>
         </div>

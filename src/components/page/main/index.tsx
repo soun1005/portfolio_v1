@@ -8,9 +8,11 @@ import { useAppContext } from '@/pages/context/AppContext';
 import { AnimatedText } from '@/components/framer-motion-utils/AnimatedText';
 import { Appearance } from '@/components/framer-motion-utils/Appearance';
 import { easeInOut } from 'framer-motion';
+import { translations } from '@/locales/translations';
 
 const Main = () => {
-  const { isLightMode } = useAppContext();
+  const { isLightMode, lang } = useAppContext();
+  const T = translations.main;
 
   return (
     <div className={`container ${styles.container}`}>
@@ -21,7 +23,7 @@ const Main = () => {
             <div className={styles.firstRow}>
               <AnimatedText
                 el="span"
-                text={['FRONTEND', 'DEVELOPER']}
+                text={T.role[lang]}
                 className="heroText"
               />
             </div>
@@ -32,12 +34,11 @@ const Main = () => {
                   visible: { opacity: 1, x: 0 },
                 },
                 initial: 'hidden',
-
                 transition: { duration: 0.3, delay: 1.5, ease: easeInOut },
               }}
             >
-              <p className={`${styles.paragraph} ${styles.reactP} `}>
-                - SPECIALISED IN REACT / TS / REACT NATIVE
+              <p className={`${styles.paragraph} ${styles.reactP}`}>
+                {T.specialised[lang]}
               </p>
             </Appearance>
           </div>
@@ -56,8 +57,7 @@ const Main = () => {
             ) : (
               <Image src={arrowWhite} alt="arrow" className={styles.arrow} />
             )}
-
-            <span>SCROLL</span>
+            <span>{T.scroll[lang]}</span>
           </div>
           <div className={styles.bottomWrap}>
             <Appearance

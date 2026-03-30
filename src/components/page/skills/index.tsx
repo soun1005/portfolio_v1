@@ -19,96 +19,57 @@ import mongodb from '@/assets/skillIcons/mongodb.png';
 import { useAppContext } from '@/pages/context/AppContext';
 import { Appearance } from '@/components/framer-motion-utils/Appearance';
 import zustand from '@/assets/skillIcons/zustand.png';
+import { translations } from '@/locales/translations';
 
 const Skills = () => {
-  const { isLightMode } = useAppContext();
+  const { isLightMode, lang } = useAppContext();
+  const T = translations.skills;
 
   return (
     <div className={`container ${styles.container}`} id="skills">
-      <h1 className="title">Skills</h1>
+      <h1 className="title">{T.title[lang]}</h1>
 
       <div className={styles.cardWrap}>
-        {/* frontend */}
         <div className={styles.group}>
-          <h2>FRONT-END</h2>
-
+          <h2>{T.frontend[lang]}</h2>
           <div className={styles.skillWrap}>
+            <Appearance><Card title="JAVASCRIPT" image={js} /></Appearance>
+            <Appearance><Card title="TYPESCRIPT" image={ts} /></Appearance>
+            <Appearance><Card title="REACT/React Native" image={react} /></Appearance>
             <Appearance>
-              <Card title="JAVASCRIPT" image={js} />
+              {isLightMode ? <Card title="NEXT.JS" image={next} /> : <Card title="NEXT.JS" image={nextW} />}
             </Appearance>
-            <Appearance>
-              <Card title="TYPESCRIPT" image={ts} />
-            </Appearance>
-
-            <Appearance>
-              <Card title="REACT/React Native" image={react} />
-            </Appearance>
-            <Appearance>
-              {isLightMode ? (
-                <Card title="NEXT.JS" image={next} />
-              ) : (
-                <Card title="NEXT.JS" image={nextW} />
-              )}
-            </Appearance>
-            <Appearance>
-              <Card title="REDUX" image={redux} />
-            </Appearance>
-            <Appearance>
-              <Card title="ZUSTAND" image={zustand} />
-            </Appearance>
+            <Appearance><Card title="REDUX" image={redux} /></Appearance>
+            <Appearance><Card title="ZUSTAND" image={zustand} /></Appearance>
           </div>
         </div>
 
-        {/* backend */}
         <div className={styles.group}>
-          <h2>BACK-END</h2>
+          <h2>{T.backend[lang]}</h2>
           <div className={styles.skillWrap}>
+            <Appearance><Card title="NODE JS" image={nodejs} /></Appearance>
             <Appearance>
-              <Card title="NODE JS" image={nodejs} />
+              {isLightMode ? <Card title="EXPRESS.JS" image={expressjs} /> : <Card title="EXPRESS.JS" image={expressjsW} />}
             </Appearance>
-
-            <Appearance>
-              {isLightMode ? (
-                <Card title="EXPRESS.JS" image={expressjs} />
-              ) : (
-                <Card title="EXPRESS.JS" image={expressjsW} />
-              )}
-            </Appearance>
-            <Appearance>
-              <Card title="MONGODB" image={mongodb} />
-            </Appearance>
+            <Appearance><Card title="MONGODB" image={mongodb} /></Appearance>
           </div>
         </div>
 
-        {/* design */}
         <div className={styles.group}>
-          <h2>DESIGN</h2>
+          <h2>{T.design[lang]}</h2>
           <div className={styles.skillWrap}>
-            <Appearance>
-              <Card title="SCSS" image={sass} />
-            </Appearance>
-            <Appearance>
-              <Card title="BOOTSTRAP" image={boot} />
-            </Appearance>
-            <Appearance>
-              <Card title="TAILWIND" image={tailwind} />
-            </Appearance>
-            <Appearance>
-              <Card title="FIGMA" image={figma} />
-            </Appearance>
+            <Appearance><Card title="SCSS" image={sass} /></Appearance>
+            <Appearance><Card title="BOOTSTRAP" image={boot} /></Appearance>
+            <Appearance><Card title="TAILWIND" image={tailwind} /></Appearance>
+            <Appearance><Card title="FIGMA" image={figma} /></Appearance>
           </div>
         </div>
 
-        {/* other */}
         <div className={styles.group}>
-          <h2>OTHER</h2>
+          <h2>{T.other[lang]}</h2>
           <div className={styles.skillWrap}>
-            <Appearance>
-              <Card title="GIT" image={git} />
-            </Appearance>
-            <Appearance>
-              <Card title="JEST" image={jest} />
-            </Appearance>
+            <Appearance><Card title="GIT" image={git} /></Appearance>
+            <Appearance><Card title="JEST" image={jest} /></Appearance>
           </div>
         </div>
       </div>

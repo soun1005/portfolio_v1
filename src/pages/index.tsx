@@ -15,11 +15,11 @@ export default function Home(): JSX.Element {
   return (
     <>
       <Head>
-        <title>Soeun Lee.</title>
-        <meta name="title" content="Soeun's portfolio" />
+        <title>Elodie Le gall.</title>
+        <meta name="title" content="Elodie's portfolio" />
         <meta
           name="description"
-          content="This is portfolio created by junior frontend developer, Soeun Lee."
+          content="This is portfolio created by frontend developer, Elodie Le gall."
         />
         <meta name="image" content={thumbnailUrl} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />

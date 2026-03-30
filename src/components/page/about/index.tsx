@@ -25,7 +25,7 @@ const About = () => {
                     }}
                 >
                     <div className={styles.descWrap}>
-                        <h2>Hello! I&apos;m Soeun,</h2>
+                        <h2>Hello! I&apos;m Elodie,</h2>
                         <p className={styles.title}>
               from <span className={styles.textRainbow}>Seoul🇰🇷</span> based in
               Parisien region, France
